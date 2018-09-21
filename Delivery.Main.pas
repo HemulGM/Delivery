@@ -286,6 +286,8 @@ type
     SpinEditOrderProductAmount: TlkSpinEdit;
     ComboBoxOrderProduct: TComboBox;
     ButtonFlatOrderProductNew: TButtonFlat;
+    LabelOrderProductUnit: TLabel;
+    ButtonFlat5: TButtonFlat;
     procedure FormCreate(Sender: TObject);
     procedure TableExClientsGetData(FCol, FRow: Integer; var Value: string);
     procedure TableExAddrGetData(FCol, FRow: Integer; var Value: string);
@@ -360,6 +362,7 @@ type
     procedure TableExOrderProductsGetData(FCol, FRow: Integer;
       var Value: string);
     procedure ButtonFlatOrderProductNewClick(Sender: TObject);
+    procedure ComboBoxOrderProductChange(Sender: TObject);
    private
     FAppState:TAppState;
     FNotify:TNotifyPanel;
@@ -385,6 +388,7 @@ type
     procedure OpenPage(Panel: TPanel);
     procedure UpdateFeed;
     procedure InitTables;
+    procedure CreateParams(var Params: TCreateParams); overload;
   public
     function AddClient:Integer;
     function EditClient:Integer;
@@ -429,6 +433,12 @@ implementation
  uses Math;
 
 {$R *.dfm}
+
+procedure TFormMain.CreateParams(var Params:TCreateParams);
+begin
+ inherited;
+ Params.ExStyle:=Params.ExStyle or WS_EX_COMPOSITED;
+end;
 
 procedure TFormMain.Save;
 begin
@@ -1068,6 +1078,15 @@ begin
  Result:=FAppState.FModals <= 0;
  if not Result then
   FNotify.Warning('Внимание', 'Сначала закончите работу с формой!');
+end;
+
+procedure TFormMain.ComboBoxOrderProductChange(Sender: TObject);
+begin
+ if not IndexInList(ComboBoxOrderProduct.ItemIndex, FProdKind.Count) then Exit;
+ case FProdKind[ComboBoxOrderProduct.ItemIndex].ItemUnit of
+  pkuGramm: LabelOrderProductUnit.Caption:='грамм.';
+  pkuUnit: LabelOrderProductUnit.Caption:='шт.';
+ end;
 end;
 
 procedure TFormMain.ComboBoxSelOrderClientChange(Sender: TObject);

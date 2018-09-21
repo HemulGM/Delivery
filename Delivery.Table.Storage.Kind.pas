@@ -18,6 +18,7 @@ interface
     FEmpty:Boolean;
     function GetItemUnitStr: string;
     function GetDesc: string;
+    function GetDescWithComment: string;
    public
     ID:Integer;
     Name:string;
@@ -27,6 +28,7 @@ interface
     property Modifed:Boolean read FModifed write FModifed;
     property Empty:Boolean read FEmpty write FEmpty;
     property Desc:string read GetDesc;
+    property DescWithComment:string read GetDescWithComment;
     procedure Update;
     procedure GetBack;
     constructor Create(AOwner:TTableProductKind);
@@ -52,7 +54,6 @@ interface
     procedure Delete(Item:TItemProdKind); overload;
     procedure Delete(Index:Integer); overload;
     procedure FillList(List: TStrings; var SelID: Integer);
-    function GetNextOrderNumber:Integer;
     procedure Clear; override;
     property LoadOrderBy:string read FOrderBy write FOrderBy;
     property LoadOrderByDESC:Boolean read FOrderByDESC write FOrderByDESC;
@@ -84,7 +85,7 @@ begin
  try
   for i:= 0 to Count-1 do
    begin
-    List.Add(Items[i].Desc);
+    List.Add(Items[i].DescWithComment);
     if Items[i].ID = SelID then s:=i;
    end;
  finally
@@ -155,11 +156,6 @@ begin
    RTable.Free;
    EndCreate;
   end;
-end;
-
-function TTableProductKind.GetNextOrderNumber: Integer;
-begin
- Result:=FDB.GetNextVal('ORDERS');
 end;
 
 procedure TTableProductKind.Load;
@@ -269,6 +265,11 @@ end;
 function TItemProdKind.GetDesc: string;
 begin
  Result:=Name+' ('+ItemUnitStr+')';
+end;
+
+function TItemProdKind.GetDescWithComment: string;
+begin
+ if Comment.IsEmpty then Exit(Name) else Exit(Name+' ('+Comment+')');
 end;
 
 function TItemProdKind.GetItemUnitStr: string;
