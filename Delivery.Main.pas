@@ -5,11 +5,11 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
-  System.Generics.Collections, Vcl.Grids, TableDraw, Vcl.StdCtrls, Vcl.ExtCtrls,
+  System.Generics.Collections, Vcl.Grids, HGM.Controls.VirtualTable, Vcl.StdCtrls, Vcl.ExtCtrls,
   System.ImageList, Vcl.Buttons, Vcl.ComCtrls,
   Vcl.ImgList, Vcl.Menus,
 
-  LKDU.Button, HGM.Common.Utils, LKDU.SpinEdit, HGM.Common.Notify,
+  HGM.Button, HGM.Common.Utils, HGM.Controls.SpinEdit, HGM.Common.Notify,
 
   Delivery.Table.Clients, Delivery.Table.Addresses, Delivery.Table.Orders,
   Delivery.Table.History, Delivery.Table.Storage.Kind, Delivery.DB,

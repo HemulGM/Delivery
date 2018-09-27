@@ -5,7 +5,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  TableDraw, SQLLang, SQLiteTable3;
+  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3;
 
  type
   TUID = record
