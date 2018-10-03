@@ -288,6 +288,9 @@ type
     ButtonFlatOrderProductNew: TButtonFlat;
     LabelOrderProductUnit: TLabel;
     ButtonFlat5: TButtonFlat;
+    ButtonFlat9: TButtonFlat;
+    ButtonFlat10: TButtonFlat;
+    ButtonFlat11: TButtonFlat;
     procedure FormCreate(Sender: TObject);
     procedure TableExClientsGetData(FCol, FRow: Integer; var Value: string);
     procedure TableExAddrGetData(FCol, FRow: Integer; var Value: string);
