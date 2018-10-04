@@ -3,13 +3,13 @@ unit Delivery.Main;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
-  System.Generics.Collections, Vcl.Grids, HGM.Controls.VirtualTable, Vcl.StdCtrls, Vcl.ExtCtrls,
-  System.ImageList, Vcl.Buttons, Vcl.ComCtrls,
-  Vcl.ImgList, Vcl.Menus,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  System.Generics.Collections, Vcl.Grids, Vcl.StdCtrls, Vcl.ExtCtrls,
+  System.ImageList, Vcl.Buttons, Vcl.ComCtrls, Vcl.ImgList, Vcl.Menus,
 
   HGM.Button, HGM.Common.Utils, HGM.Controls.SpinEdit, HGM.Common.Notify,
+  HGM.Controls.VirtualTable,
 
   Delivery.Table.Clients, Delivery.Table.Addresses, Delivery.Table.Orders,
   Delivery.Table.History, Delivery.Table.Storage.Kind, Delivery.DB,
@@ -288,9 +288,9 @@ type
     ButtonFlatOrderProductNew: TButtonFlat;
     LabelOrderProductUnit: TLabel;
     ButtonFlat5: TButtonFlat;
-    ButtonFlat9: TButtonFlat;
-    ButtonFlat10: TButtonFlat;
     ButtonFlat11: TButtonFlat;
+    ButtonFlat10: TButtonFlat;
+    ButtonFlat9: TButtonFlat;
     procedure FormCreate(Sender: TObject);
     procedure TableExClientsGetData(FCol, FRow: Integer; var Value: string);
     procedure TableExAddrGetData(FCol, FRow: Integer; var Value: string);

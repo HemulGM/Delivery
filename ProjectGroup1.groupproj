@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E96FD576-F516-4976-B6D6-91961AB903A7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Delivery.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Components\HGMComponents.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Delivery">
+        <MSBuild Projects="Delivery.dproj"/>
+    </Target>
+    <Target Name="Delivery:Clean">
+        <MSBuild Projects="Delivery.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Delivery:Make">
+        <MSBuild Projects="Delivery.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HGMComponents">
+        <MSBuild Projects="..\..\Components\HGMComponents.dproj"/>
+    </Target>
+    <Target Name="HGMComponents:Clean">
+        <MSBuild Projects="..\..\Components\HGMComponents.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HGMComponents:Make">
+        <MSBuild Projects="..\..\Components\HGMComponents.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Delivery;HGMComponents"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Delivery:Clean;HGMComponents:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Delivery:Make;HGMComponents:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

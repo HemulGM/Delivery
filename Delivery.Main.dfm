@@ -733,305 +733,6 @@ object FormMain: TFormMain
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    object PanelTableClients: TPanel
-      Left = 0
-      Top = 0
-      Width = 997
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 0
-      Visible = False
-      object PanelTableClientHead: TPanel
-        Left = 0
-        Top = 0
-        Width = 997
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object Label3: TLabel
-          AlignWithMargins = True
-          Left = 15
-          Top = 3
-          Width = 250
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          AutoSize = False
-          Caption = #1050#1083#1080#1077#1085#1090#1099
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-        end
-      end
-      object PanelTableClientsClient: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 977
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        object Panel5: TPanel
-          Left = 1
-          Top = 1
-          Width = 975
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          object TableExClients: TTableEx
-            AlignWithMargins = True
-            Left = 5
-            Top = 45
-            Width = 965
-            Height = 557
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alClient
-            BorderStyle = bsNone
-            Color = clWhite
-            DefaultRowHeight = 30
-            TabOrder = 0
-            ItemIndex = -1
-            GetData = TableExClientsGetData
-            CanNoSelect = False
-            ItemCount = 1
-            LineColor = clWhite
-            LineColorXor = clWhite
-            LineHotColor = 16250610
-            LineSelColor = 14803425
-            ColumnsColor = 15329769
-            FontHotLine.Charset = DEFAULT_CHARSET
-            FontHotLine.Color = 2631720
-            FontHotLine.Height = -13
-            FontHotLine.Name = 'Tahoma'
-            FontHotLine.Style = []
-            FontLine.Charset = DEFAULT_CHARSET
-            FontLine.Color = 2631720
-            FontLine.Height = -13
-            FontLine.Name = 'Tahoma'
-            FontLine.Style = []
-            FontSelLine.Charset = DEFAULT_CHARSET
-            FontSelLine.Color = 2631720
-            FontSelLine.Height = -13
-            FontSelLine.Name = 'Tahoma'
-            FontSelLine.Style = []
-            ColumnsFont.Charset = DEFAULT_CHARSET
-            ColumnsFont.Color = 2631720
-            ColumnsFont.Height = -13
-            ColumnsFont.Name = 'Tahoma'
-            ColumnsFont.Style = []
-            ShowFocus = True
-            DrawColumnBorded = False
-            FlashSelectedCol = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              30
-              30)
-          end
-          object Panel6: TPanel
-            Left = 0
-            Top = 0
-            Width = 975
-            Height = 40
-            Align = alTop
-            BevelOuter = bvNone
-            Color = clWhite
-            ParentBackground = False
-            TabOrder = 1
-            object ButtonFlatClientsAdd: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 103
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1053#1086#1074#1099#1081
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatClientsAddClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatClientsEdit: TButtonFlat
-              AlignWithMargins = True
-              Left = 113
-              Top = 5
-              Width = 116
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 12
-              Images = ImageListSmall
-              OnClick = ButtonFlatClientsEditClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatClientsDel: TButtonFlat
-              AlignWithMargins = True
-              Left = 234
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1059#1076#1072#1083#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 4
-              Images = ImageListSmall
-              OnClick = ButtonFlatClientsDelClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 2
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatClientsLoad: TButtonFlat
-              AlignWithMargins = True
-              Left = 929
-              Top = 5
-              Width = 41
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 5
-              Margins.Bottom = 5
-              Align = alRight
-              Caption = ''
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 13
-              Images = ImageListSmall
-              OnClick = ButtonFlatClientsLoadClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 3
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-        end
-      end
-    end
     object PanelCurClient: TPanel
       Left = 0
       Top = 0
@@ -1379,6 +1080,7 @@ object FormMain: TFormMain
               TabOrder = 0
               ItemIndex = -1
               GetData = TableExCurClientAddrsGetData
+              Columns = <>
               CanNoSelect = False
               ItemCount = 1
               FontHotLine.Charset = DEFAULT_CHARSET
@@ -1402,252 +1104,6 @@ object FormMain: TFormMain
               ColumnsFont.Height = -11
               ColumnsFont.Name = 'Tahoma'
               ColumnsFont.Style = []
-              ColWidths = (
-                60)
-              RowHeights = (
-                25)
-            end
-          end
-        end
-      end
-    end
-    object PanelProdKind: TPanel
-      Left = 0
-      Top = 0
-      Width = 997
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 5
-      Visible = False
-      object Panel30: TPanel
-        Left = 0
-        Top = 0
-        Width = 997
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object LabelSelProdKind: TLabel
-          AlignWithMargins = True
-          Left = 15
-          Top = 3
-          Width = 276
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          Caption = #1053#1086#1074#1099#1081' '#1074#1080#1076' '#1090#1086#1074#1072#1088#1072
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-          ExplicitHeight = 45
-        end
-      end
-      object Panel31: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 977
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        object Panel32: TPanel
-          Left = 1
-          Top = 1
-          Width = 975
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          object Panel33: TPanel
-            Left = 0
-            Top = 0
-            Width = 975
-            Height = 40
-            Align = alTop
-            BevelOuter = bvNone
-            Color = clWhite
-            ParentBackground = False
-            TabOrder = 0
-            object ButtonFlatProdKindSave: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 127
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 6
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindSaveClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatProdKindClose: TButtonFlat
-              AlignWithMargins = True
-              Left = 137
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1047#1072#1082#1088#1099#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 5
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindCloseClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-          object Panel34: TPanel
-            AlignWithMargins = True
-            Left = 5
-            Top = 45
-            Width = 965
-            Height = 557
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            Color = 16250610
-            ParentBackground = False
-            TabOrder = 1
-            object Label18: TLabel
-              Left = 17
-              Top = 24
-              Width = 96
-              Height = 17
-              Caption = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label19: TLabel
-              Left = 17
-              Top = 55
-              Width = 62
-              Height = 17
-              Caption = #1054#1087#1080#1089#1072#1085#1080#1077
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label21: TLabel
-              Left = 17
-              Top = 86
-              Width = 92
-              Height = 17
-              Caption = #1045#1076'. '#1080#1079#1084#1077#1088#1077#1085#1080#1103
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object EditProdKindName: TEdit
-              Left = 119
-              Top = 21
-              Width = 466
-              Height = 25
-              TabOrder = 0
-              TextHint = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077' '#1074#1080#1076#1072' '#1090#1086#1074#1072#1088#1072
-            end
-            object EditProdKindComment: TEdit
-              Left = 119
-              Top = 52
-              Width = 466
-              Height = 25
-              TabOrder = 1
-              TextHint = #1054#1087#1080#1089#1072#1085#1080#1077' '#1074#1080#1076#1072' '#1090#1086#1074#1072#1088#1072
-            end
-            object ComboBoxProdKindUnit: TComboBox
-              Left = 119
-              Top = 83
-              Width = 154
-              Height = 25
-              Style = csDropDownList
-              TabOrder = 2
-              TextHint = #1045#1076#1080#1085#1080#1094#1099' '#1080#1079#1084#1077#1088#1077#1085#1080#1103
             end
           end
         end
@@ -1923,6 +1379,7 @@ object FormMain: TFormMain
               ItemIndex = -1
               OnItemClick = TableExHotOrdersItemClick
               ProcEmpty = True
+              Columns = <>
               DefaultDataDrawing = False
               CanNoSelect = False
               ItemCount = 1
@@ -1954,10 +1411,6 @@ object FormMain: TFormMain
               ColumnsFont.Style = []
               DrawColumnBorded = False
               FlashSelectedCol = True
-              ColWidths = (
-                60)
-              RowHeights = (
-                120)
             end
             object Panel26: TPanel
               Left = 1
@@ -2101,6 +1554,7 @@ object FormMain: TFormMain
             TabOrder = 3
             OnDrawCellData = TableExFeedDrawCellData
             ItemIndex = -1
+            Columns = <>
             DefaultDataDrawing = False
             ShowScrollBar = False
             CanNoSelect = False
@@ -2127,10 +1581,6 @@ object FormMain: TFormMain
             ColumnsFont.Name = 'Tahoma'
             ColumnsFont.Style = []
             SetFocusOnEnter = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              50)
           end
         end
       end
@@ -2701,6 +2151,7 @@ object FormMain: TFormMain
               TabOrder = 0
               ItemIndex = -1
               GetData = TableExCurClientAddrsGetData
+              Columns = <>
               CanNoSelect = False
               ItemCount = 1
               FontHotLine.Charset = DEFAULT_CHARSET
@@ -2724,1399 +2175,6 @@ object FormMain: TFormMain
               ColumnsFont.Height = -11
               ColumnsFont.Name = 'Tahoma'
               ColumnsFont.Style = []
-              ColWidths = (
-                60)
-              RowHeights = (
-                25)
-            end
-          end
-        end
-      end
-    end
-    object PanelStorageItem: TPanel
-      Left = 0
-      Top = 0
-      Width = 997
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 9
-      Visible = False
-      object Panel47: TPanel
-        Left = 0
-        Top = 0
-        Width = 997
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object Label24: TLabel
-          AlignWithMargins = True
-          Left = 15
-          Top = 3
-          Width = 320
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          AutoSize = False
-          Caption = #1055#1086#1089#1090#1091#1087#1083#1077#1085#1080#1077' '#1090#1086#1074#1072#1088#1072
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-        end
-      end
-      object Panel48: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 977
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        object Panel49: TPanel
-          Left = 1
-          Top = 1
-          Width = 975
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          object Panel50: TPanel
-            Left = 0
-            Top = 0
-            Width = 975
-            Height = 40
-            Align = alTop
-            BevelOuter = bvNone
-            Color = clWhite
-            ParentBackground = False
-            TabOrder = 0
-            object ButtonFlatStorageItemSave: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 127
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 6
-              Images = ImageListSmall
-              OnClick = ButtonFlatStorageItemSaveClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatStorageItemClose: TButtonFlat
-              AlignWithMargins = True
-              Left = 137
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1047#1072#1082#1088#1099#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 5
-              Images = ImageListSmall
-              OnClick = ButtonFlatStorageItemCloseClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-          object Panel51: TPanel
-            AlignWithMargins = True
-            Left = 5
-            Top = 45
-            Width = 965
-            Height = 557
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            Color = 16250610
-            ParentBackground = False
-            TabOrder = 1
-            object Label25: TLabel
-              Left = 17
-              Top = 24
-              Width = 39
-              Height = 17
-              Caption = #1058#1086#1074#1072#1088
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label26: TLabel
-              Left = 17
-              Top = 55
-              Width = 45
-              Height = 17
-              Caption = #1050#1086#1083'-'#1074#1086
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object ComboBoxStorageItemProduct: TComboBox
-              Left = 114
-              Top = 21
-              Width = 290
-              Height = 25
-              TabOrder = 0
-              OnChange = ComboBoxSelOrderClientChange
-            end
-            object SpinEditStorageItemAmount: TlkSpinEdit
-              Left = 114
-              Top = 52
-              Width = 145
-              Height = 25
-              MaxValue = 99999999
-              MinValue = 1
-              TabOrder = 1
-              Value = 1
-            end
-            object ButtonFlatStorageItemAddProduct: TButtonFlat
-              Left = 410
-              Top = 21
-              Width = 138
-              Height = 25
-              Caption = #1053#1086#1074#1099#1081' '#1090#1086#1074#1072#1088
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindAddClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 2
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-        end
-      end
-    end
-    object PanelOrder: TPanel
-      Left = 0
-      Top = 0
-      Width = 997
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 2
-      Visible = False
-      object Panel12: TPanel
-        Left = 0
-        Top = 0
-        Width = 997
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object LabelSelectOrder: TLabel
-          AlignWithMargins = True
-          Left = 15
-          Top = 3
-          Width = 250
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          AutoSize = False
-          Caption = #1047#1072#1082#1072#1079' 000001'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-        end
-      end
-      object Panel13: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 977
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        object Panel14: TPanel
-          Left = 1
-          Top = 1
-          Width = 975
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          object Panel15: TPanel
-            Left = 0
-            Top = 0
-            Width = 975
-            Height = 40
-            Align = alTop
-            BevelOuter = bvNone
-            Color = clWhite
-            ParentBackground = False
-            TabOrder = 0
-            object ButtonFlatOrderSave: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 127
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 6
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderSaveClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatOrderClose: TButtonFlat
-              AlignWithMargins = True
-              Left = 137
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1047#1072#1082#1088#1099#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 5
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderCloseClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-          object Panel7: TPanel
-            AlignWithMargins = True
-            Left = 5
-            Top = 45
-            Width = 965
-            Height = 557
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            Color = 16250610
-            ParentBackground = False
-            TabOrder = 1
-            object Label5: TLabel
-              Left = 17
-              Top = 24
-              Width = 45
-              Height = 17
-              Caption = #1050#1083#1080#1077#1085#1090
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label7: TLabel
-              Left = 17
-              Top = 55
-              Width = 30
-              Height = 17
-              Caption = #1050#1091#1076#1072
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label8: TLabel
-              Left = 17
-              Top = 117
-              Width = 51
-              Height = 17
-              Caption = #1044#1072#1085#1085#1099#1077
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label9: TLabel
-              Left = 17
-              Top = 166
-              Width = 88
-              Height = 17
-              Caption = #1050#1086#1084#1084#1077#1085#1090#1072#1088#1080#1081
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label6: TLabel
-              Left = 17
-              Top = 86
-              Width = 36
-              Height = 17
-              Caption = #1050#1086#1075#1076#1072
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label16: TLabel
-              Left = 17
-              Top = 442
-              Width = 40
-              Height = 17
-              Caption = #1057#1090#1072#1090#1091#1089
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label27: TLabel
-              Left = 17
-              Top = 216
-              Width = 87
-              Height = 17
-              Caption = #1057#1086#1089#1090#1072#1074' '#1079#1072#1082#1072#1079#1072
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label28: TLabel
-              Left = 17
-              Top = 473
-              Width = 60
-              Height = 17
-              Caption = #1042#1086#1076#1080#1090#1077#1083#1100
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object LabelOrderProductUnit: TLabel
-              Left = 527
-              Top = 216
-              Width = 58
-              Height = 17
-              AutoSize = False
-              Caption = #1096#1090'.'
-              EllipsisPosition = epEndEllipsis
-            end
-            object ComboBoxSelOrderClient: TComboBox
-              Left = 114
-              Top = 21
-              Width = 471
-              Height = 25
-              TabOrder = 0
-              OnChange = ComboBoxSelOrderClientChange
-            end
-            object ComboBoxSelOrderAddr: TComboBox
-              Left = 114
-              Top = 52
-              Width = 471
-              Height = 25
-              TabOrder = 1
-            end
-            object MemoSelOrderData: TMemo
-              Left = 114
-              Top = 114
-              Width = 471
-              Height = 43
-              ScrollBars = ssVertical
-              TabOrder = 2
-            end
-            object MemoSelOrderComment: TMemo
-              Left = 114
-              Top = 163
-              Width = 471
-              Height = 43
-              ScrollBars = ssVertical
-              TabOrder = 3
-            end
-            object DateTimePickerSelOrderTime: TDateTimePicker
-              Left = 231
-              Top = 83
-              Width = 66
-              Height = 24
-              Date = 43334.836574074080000000
-              Format = 'HH:mm'
-              Time = 43334.836574074080000000
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              Kind = dtkTime
-              ParentFont = False
-              TabOrder = 4
-              OnChange = DateTimePickerSelOrderTimeChange
-            end
-            object DateTimePickerSelOrderDate: TDateTimePicker
-              Left = 114
-              Top = 83
-              Width = 111
-              Height = 24
-              Date = 43334.128251226850000000
-              Time = 43334.128251226850000000
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 5
-            end
-            object ButtonFlatOrderDraft: TButtonFlat
-              Left = 114
-              Top = 439
-              Width = 109
-              Height = 25
-              Caption = #1063#1077#1088#1085#1086#1074#1080#1082
-              ColorNormal = 16242577
-              ColorOver = 16442294
-              ColorPressed = 16242577
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 8
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderDraftClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 6
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatOrderNormal: TButtonFlat
-              Tag = 1
-              Left = 229
-              Top = 439
-              Width = 100
-              Height = 25
-              Caption = #1054#1078#1080#1076#1072#1077#1090
-              ColorNormal = 16250610
-              ColorOver = 16442294
-              ColorPressed = 16242577
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 9
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderDraftClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 7
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatOrderDelivery: TButtonFlat
-              Tag = 2
-              Left = 335
-              Top = 439
-              Width = 130
-              Height = 25
-              Caption = #1044#1086#1089#1090#1072#1074#1083#1103#1077#1090#1089#1103
-              ColorNormal = 16250610
-              ColorOver = 16442294
-              ColorPressed = 16242577
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 10
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderDraftClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 8
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatOrderDelivered: TButtonFlat
-              Tag = 3
-              Left = 471
-              Top = 439
-              Width = 114
-              Height = 25
-              Caption = #1044#1086#1089#1090#1072#1074#1083#1077#1085
-              ColorNormal = 16250610
-              ColorOver = 16442294
-              ColorPressed = 16242577
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 11
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderDraftClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 9
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatOrderNewClient: TButtonFlat
-              Left = 591
-              Top = 21
-              Width = 150
-              Height = 25
-              Caption = #1053#1086#1074#1099#1081' '#1082#1083#1080#1077#1085#1090
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = 6250335
-              FontOver.Height = -13
-              FontOver.Name = 'Segoe UI'
-              FontOver.Style = [fsBold]
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = 6250335
-              FontDown.Height = -13
-              FontDown.Name = 'Segoe UI'
-              FontDown.Style = [fsBold]
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderNewClientClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 10
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object TableExOrderProducts: TTableEx
-              Left = 114
-              Top = 243
-              Width = 471
-              Height = 190
-              Color = clWhite
-              DefaultRowHeight = 25
-              TabOrder = 11
-              ItemIndex = -1
-              GetData = TableExOrderProductsGetData
-              CanNoSelect = False
-              ItemCount = 1
-              LineColor = clWhite
-              LineColorXor = clWhite
-              LineHotColor = 16250610
-              LineSelColor = 14803425
-              ColumnsColor = 15329769
-              FontHotLine.Charset = DEFAULT_CHARSET
-              FontHotLine.Color = 2631720
-              FontHotLine.Height = -13
-              FontHotLine.Name = 'Tahoma'
-              FontHotLine.Style = []
-              FontLine.Charset = DEFAULT_CHARSET
-              FontLine.Color = 2631720
-              FontLine.Height = -13
-              FontLine.Name = 'Tahoma'
-              FontLine.Style = []
-              FontSelLine.Charset = DEFAULT_CHARSET
-              FontSelLine.Color = 2631720
-              FontSelLine.Height = -13
-              FontSelLine.Name = 'Tahoma'
-              FontSelLine.Style = []
-              ColumnsFont.Charset = DEFAULT_CHARSET
-              ColumnsFont.Color = 2631720
-              ColumnsFont.Height = -13
-              ColumnsFont.Name = 'Tahoma'
-              ColumnsFont.Style = []
-              ShowFocus = True
-              DrawColumnBorded = False
-              ColWidths = (
-                444)
-              RowHeights = (
-                30
-                25)
-            end
-            object ButtonFlatCurOrderProductAdd: TButtonFlat
-              Left = 591
-              Top = 249
-              Width = 109
-              Height = 25
-              Caption = #1044#1086#1073#1072#1074#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatCurOrderProductAddClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 12
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatCurOrderProductDelete: TButtonFlat
-              Left = 591
-              Top = 280
-              Width = 109
-              Height = 25
-              Caption = #1059#1073#1088#1072#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 3
-              Images = ImageListSmall
-              OnClick = ButtonFlatCurOrderProductDeleteClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 13
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatCurOrderProductClear: TButtonFlat
-              Left = 591
-              Top = 311
-              Width = 109
-              Height = 25
-              Caption = #1054#1095#1080#1089#1090#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 4
-              Images = ImageListSmall
-              OnClick = ButtonFlatCurOrderProductClearClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 14
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ComboBoxSelOrderDriver: TComboBox
-              Left = 114
-              Top = 470
-              Width = 471
-              Height = 25
-              TabOrder = 15
-            end
-            object ButtonFlatOrderNewDriver: TButtonFlat
-              Left = 591
-              Top = 470
-              Width = 150
-              Height = 25
-              Caption = #1053#1086#1074#1099#1081' '#1074#1086#1076#1080#1090#1077#1083#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderNewDriverClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 16
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object SpinEditOrderProductAmount: TlkSpinEdit
-              Left = 440
-              Top = 212
-              Width = 81
-              Height = 25
-              MaxValue = 99999999
-              MinValue = 1
-              TabOrder = 17
-              Value = 1
-            end
-            object ComboBoxOrderProduct: TComboBox
-              Left = 114
-              Top = 212
-              Width = 289
-              Height = 25
-              TabOrder = 18
-              OnChange = ComboBoxOrderProductChange
-            end
-            object ButtonFlatOrderProductNew: TButtonFlat
-              Left = 409
-              Top = 212
-              Width = 25
-              Height = 25
-              Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1085#1086#1074#1099#1081' '#1074#1080#1076' '#1090#1086#1074#1072#1088#1072
-              Caption = ''
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 0
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderProductNewClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 19
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-          end
-        end
-      end
-    end
-    object PanelTableDrivers: TPanel
-      Left = 0
-      Top = 0
-      Width = 997
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 11
-      Visible = False
-      object Panel57: TPanel
-        Left = 0
-        Top = 0
-        Width = 997
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        object Label36: TLabel
-          AlignWithMargins = True
-          Left = 138
-          Top = 3
-          Width = 250
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          AutoSize = False
-          Caption = #1042#1086#1076#1080#1090#1077#1083#1080
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-          ExplicitLeft = 15
-        end
-        object ButtonFlat9: TButtonFlat
-          AlignWithMargins = True
-          Left = 3
-          Top = 20
-          Width = 117
-          Height = 42
-          Margins.Top = 20
-          Margins.Bottom = 20
-          Align = alLeft
-          Caption = #1053#1072#1079#1072#1076
-          ColorNormal = 16052974
-          ColorOver = 15131097
-          ColorPressed = 16053232
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 5197647
-          Font.Height = -13
-          Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
-          FontOver.Charset = DEFAULT_CHARSET
-          FontOver.Color = clWhite
-          FontOver.Height = -13
-          FontOver.Name = 'Tahoma'
-          FontOver.Style = []
-          FontDown.Charset = DEFAULT_CHARSET
-          FontDown.Color = clWhite
-          FontDown.Height = -13
-          FontDown.Name = 'Tahoma'
-          FontDown.Style = []
-          IgnorBounds = True
-          ImageIndentLeft = 10
-          ImageIndentRight = 8
-          ImageIndex = 16
-          Images = ImageListSmall
-          OnClick = ButtonFlatDBConfigClick
-          RoundRectParam = 42
-          Shape = stRoundRect
-          ShowFocusRect = False
-          TabOrder = 0
-          TabStop = True
-          TextFormat = [tfSingleLine, tfVerticalCenter]
-          ExplicitTop = 18
-        end
-      end
-      object Panel58: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 977
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        object Panel59: TPanel
-          Left = 1
-          Top = 1
-          Width = 975
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          object TableExDrivers: TTableEx
-            AlignWithMargins = True
-            Left = 5
-            Top = 45
-            Width = 965
-            Height = 557
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alClient
-            BorderStyle = bsNone
-            Color = clWhite
-            DefaultRowHeight = 30
-            TabOrder = 0
-            ItemIndex = -1
-            GetData = TableExDriversGetData
-            CanNoSelect = False
-            ItemCount = 1
-            LineColor = clWhite
-            LineColorXor = clWhite
-            LineHotColor = 16250610
-            LineSelColor = 14803425
-            ColumnsColor = 15329769
-            FontHotLine.Charset = DEFAULT_CHARSET
-            FontHotLine.Color = 2631720
-            FontHotLine.Height = -13
-            FontHotLine.Name = 'Tahoma'
-            FontHotLine.Style = []
-            FontLine.Charset = DEFAULT_CHARSET
-            FontLine.Color = 2631720
-            FontLine.Height = -13
-            FontLine.Name = 'Tahoma'
-            FontLine.Style = []
-            FontSelLine.Charset = DEFAULT_CHARSET
-            FontSelLine.Color = 2631720
-            FontSelLine.Height = -13
-            FontSelLine.Name = 'Tahoma'
-            FontSelLine.Style = []
-            ColumnsFont.Charset = DEFAULT_CHARSET
-            ColumnsFont.Color = 2631720
-            ColumnsFont.Height = -13
-            ColumnsFont.Name = 'Tahoma'
-            ColumnsFont.Style = []
-            ShowFocus = True
-            DrawColumnBorded = False
-            FlashSelectedCol = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              30
-              30)
-          end
-          object Panel60: TPanel
-            Left = 0
-            Top = 0
-            Width = 975
-            Height = 40
-            Align = alTop
-            BevelOuter = bvNone
-            Color = clWhite
-            ParentBackground = False
-            TabOrder = 1
-            object ButtonFlatDriversAdd: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 103
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1053#1086#1074#1099#1081
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatDriversAddClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatDriverEdit: TButtonFlat
-              AlignWithMargins = True
-              Left = 113
-              Top = 5
-              Width = 116
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 12
-              Images = ImageListSmall
-              OnClick = ButtonFlatDriverEditClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatDriverDelete: TButtonFlat
-              AlignWithMargins = True
-              Left = 234
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1059#1076#1072#1083#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 4
-              Images = ImageListSmall
-              OnClick = ButtonFlatClientsDelClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 2
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatDriversUpdate: TButtonFlat
-              AlignWithMargins = True
-              Left = 929
-              Top = 5
-              Width = 41
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 5
-              Margins.Bottom = 5
-              Align = alRight
-              Caption = ''
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 13
-              Images = ImageListSmall
-              OnClick = ButtonFlatDriversUpdateClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 3
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
             end
           end
         end
@@ -4570,6 +2628,7 @@ object FormMain: TFormMain
             OnDrawCellData = TableExOrdersDrawCellData
             ItemIndex = -1
             GetData = TableExOrdersGetData
+            Columns = <>
             CanNoSelect = False
             ItemCount = 1
             LineColor = clWhite
@@ -4600,25 +2659,20 @@ object FormMain: TFormMain
             ShowFocus = True
             DrawColumnBorded = False
             FlashSelectedCol = True
-            ColWidths = (
-              396)
-            RowHeights = (
-              30
-              30)
           end
         end
       end
     end
-    object PanelTableProdKind: TPanel
+    object PanelTableStorageProtocol: TPanel
       Left = 0
       Top = 0
       Width = 997
       Height = 685
       Align = alClient
       BevelOuter = bvNone
-      TabOrder = 6
+      TabOrder = 10
       Visible = False
-      object Panel36: TPanel
+      object Panel53: TPanel
         Left = 0
         Top = 0
         Width = 997
@@ -4626,16 +2680,16 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        object Label20: TLabel
+        object Label34: TLabel
           AlignWithMargins = True
           Left = 138
           Top = 3
-          Width = 250
+          Width = 658
           Height = 76
           Margins.Left = 15
           Align = alLeft
           AutoSize = False
-          Caption = #1042#1080#1076#1099' '#1090#1086#1074#1072#1088#1086#1074
+          Caption = #1055#1088#1086#1090#1086#1082#1086#1083' '#1087#1086#1087#1086#1083#1085#1077#1085#1080#1081'/'#1089#1087#1080#1089#1072#1085#1080#1081' '#1089#1086' '#1089#1082#1083#1072#1076#1072
           Font.Charset = DEFAULT_CHARSET
           Font.Color = 6250335
           Font.Height = -33
@@ -4645,7 +2699,7 @@ object FormMain: TFormMain
           Layout = tlCenter
           ExplicitLeft = 15
         end
-        object ButtonFlat10: TButtonFlat
+        object ButtonFlat11: TButtonFlat
           AlignWithMargins = True
           Left = 3
           Top = 20
@@ -4662,14 +2716,14 @@ object FormMain: TFormMain
           Font.Color = 5197647
           Font.Height = -13
           Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
+          Font.Style = []
           FontOver.Charset = DEFAULT_CHARSET
-          FontOver.Color = clWhite
+          FontOver.Color = 5197647
           FontOver.Height = -13
           FontOver.Name = 'Tahoma'
           FontOver.Style = []
           FontDown.Charset = DEFAULT_CHARSET
-          FontDown.Color = clWhite
+          FontDown.Color = 5197647
           FontDown.Height = -13
           FontDown.Name = 'Tahoma'
           FontDown.Style = []
@@ -4685,11 +2739,9 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
-          ExplicitLeft = 11
-          ExplicitTop = 28
         end
       end
-      object Panel37: TPanel
+      object Panel54: TPanel
         AlignWithMargins = True
         Left = 0
         Top = 82
@@ -4707,7 +2759,7 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        object Panel38: TPanel
+        object Panel55: TPanel
           Left = 1
           Top = 1
           Width = 975
@@ -4717,7 +2769,7 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          object TableExProdKind: TTableEx
+          object TableExStorageProtocol: TTableEx
             AlignWithMargins = True
             Left = 5
             Top = 45
@@ -4733,7 +2785,8 @@ object FormMain: TFormMain
             DefaultRowHeight = 30
             TabOrder = 0
             ItemIndex = -1
-            GetData = TableExProdKindGetData
+            GetData = TableExStorageProtocolGetData
+            Columns = <>
             CanNoSelect = False
             ItemCount = 1
             LineColor = clWhite
@@ -4764,13 +2817,8 @@ object FormMain: TFormMain
             ShowFocus = True
             DrawColumnBorded = False
             FlashSelectedCol = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              30
-              30)
           end
-          object Panel39: TPanel
+          object Panel56: TPanel
             Left = 0
             Top = 0
             Width = 975
@@ -4780,133 +2828,7 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            object ButtonFlatProdKindAdd: TButtonFlat
-              AlignWithMargins = True
-              Left = 5
-              Top = 5
-              Width = 103
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1053#1086#1074#1099#1081
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindAddClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatProdKindEdit: TButtonFlat
-              AlignWithMargins = True
-              Left = 113
-              Top = 5
-              Width = 116
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 12
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindEditClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatProdKindDel: TButtonFlat
-              AlignWithMargins = True
-              Left = 234
-              Top = 5
-              Width = 108
-              Height = 30
-              Margins.Left = 5
-              Margins.Top = 5
-              Margins.Right = 0
-              Margins.Bottom = 5
-              Align = alLeft
-              Caption = #1059#1076#1072#1083#1080#1090#1100
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 8
-              ImageIndex = 4
-              Images = ImageListSmall
-              OnClick = ButtonFlatProdKindDelClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 2
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatProdKindLoad: TButtonFlat
+            object ButtonFlat16: TButtonFlat
               AlignWithMargins = True
               Left = 929
               Top = 5
@@ -4940,11 +2862,11 @@ object FormMain: TFormMain
               ImageIndentLeft = 8
               ImageIndex = 13
               Images = ImageListSmall
-              OnClick = ButtonFlatProdKindLoadClick
+              OnClick = ButtonFlatLoadOrdersClick
               RoundRectParam = 8
               Shape = stRoundRect
               ShowFocusRect = False
-              TabOrder = 3
+              TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
             end
@@ -5033,6 +2955,7 @@ object FormMain: TFormMain
             TabOrder = 0
             ItemIndex = -1
             GetData = TableExStorageGetData
+            Columns = <>
             CanNoSelect = False
             ItemCount = 1
             LineColor = clWhite
@@ -5063,11 +2986,6 @@ object FormMain: TFormMain
             ShowFocus = True
             DrawColumnBorded = False
             FlashSelectedCol = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              30
-              30)
           end
           object Panel46: TPanel
             Left = 0
@@ -5251,16 +3169,16 @@ object FormMain: TFormMain
         end
       end
     end
-    object PanelTableStorageProtocol: TPanel
+    object PanelTableProdKind: TPanel
       Left = 0
       Top = 0
       Width = 997
       Height = 685
       Align = alClient
       BevelOuter = bvNone
-      TabOrder = 10
+      TabOrder = 6
       Visible = False
-      object Panel53: TPanel
+      object Panel36: TPanel
         Left = 0
         Top = 0
         Width = 997
@@ -5268,16 +3186,16 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        object Label34: TLabel
+        object Label20: TLabel
           AlignWithMargins = True
           Left = 138
           Top = 3
-          Width = 658
+          Width = 250
           Height = 76
           Margins.Left = 15
           Align = alLeft
           AutoSize = False
-          Caption = #1055#1088#1086#1090#1086#1082#1086#1083' '#1087#1086#1087#1086#1083#1085#1077#1085#1080#1081'/'#1089#1087#1080#1089#1072#1085#1080#1081' '#1089#1086' '#1089#1082#1083#1072#1076#1072
+          Caption = #1042#1080#1076#1099' '#1090#1086#1074#1072#1088#1086#1074
           Font.Charset = DEFAULT_CHARSET
           Font.Color = 6250335
           Font.Height = -33
@@ -5287,7 +3205,7 @@ object FormMain: TFormMain
           Layout = tlCenter
           ExplicitLeft = 15
         end
-        object ButtonFlat11: TButtonFlat
+        object ButtonFlat10: TButtonFlat
           AlignWithMargins = True
           Left = 3
           Top = 20
@@ -5304,14 +3222,14 @@ object FormMain: TFormMain
           Font.Color = 5197647
           Font.Height = -13
           Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
+          Font.Style = []
           FontOver.Charset = DEFAULT_CHARSET
-          FontOver.Color = clWhite
+          FontOver.Color = 5197647
           FontOver.Height = -13
           FontOver.Name = 'Tahoma'
           FontOver.Style = []
           FontDown.Charset = DEFAULT_CHARSET
-          FontDown.Color = clWhite
+          FontDown.Color = 5197647
           FontDown.Height = -13
           FontDown.Name = 'Tahoma'
           FontDown.Style = []
@@ -5331,7 +3249,7 @@ object FormMain: TFormMain
           ExplicitTop = 28
         end
       end
-      object Panel54: TPanel
+      object Panel37: TPanel
         AlignWithMargins = True
         Left = 0
         Top = 82
@@ -5349,7 +3267,7 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        object Panel55: TPanel
+        object Panel38: TPanel
           Left = 1
           Top = 1
           Width = 975
@@ -5359,7 +3277,7 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          object TableExStorageProtocol: TTableEx
+          object TableExProdKind: TTableEx
             AlignWithMargins = True
             Left = 5
             Top = 45
@@ -5375,7 +3293,8 @@ object FormMain: TFormMain
             DefaultRowHeight = 30
             TabOrder = 0
             ItemIndex = -1
-            GetData = TableExStorageProtocolGetData
+            GetData = TableExProdKindGetData
+            Columns = <>
             CanNoSelect = False
             ItemCount = 1
             LineColor = clWhite
@@ -5406,13 +3325,8 @@ object FormMain: TFormMain
             ShowFocus = True
             DrawColumnBorded = False
             FlashSelectedCol = True
-            ColWidths = (
-              60)
-            RowHeights = (
-              30
-              30)
           end
-          object Panel56: TPanel
+          object Panel39: TPanel
             Left = 0
             Top = 0
             Width = 975
@@ -5422,7 +3336,133 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            object ButtonFlat16: TButtonFlat
+            object ButtonFlatProdKindAdd: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 103
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1053#1086#1074#1099#1081
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindAddClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatProdKindEdit: TButtonFlat
+              AlignWithMargins = True
+              Left = 113
+              Top = 5
+              Width = 116
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 12
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindEditClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatProdKindDel: TButtonFlat
+              AlignWithMargins = True
+              Left = 234
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1059#1076#1072#1083#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 4
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindDelClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 2
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatProdKindLoad: TButtonFlat
               AlignWithMargins = True
               Left = 929
               Top = 5
@@ -5456,11 +3496,1935 @@ object FormMain: TFormMain
               ImageIndentLeft = 8
               ImageIndex = 13
               Images = ImageListSmall
-              OnClick = ButtonFlatLoadOrdersClick
+              OnClick = ButtonFlatProdKindLoadClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 3
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+        end
+      end
+    end
+    object PanelTableDrivers: TPanel
+      Left = 0
+      Top = 0
+      Width = 997
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 11
+      Visible = False
+      object Panel57: TPanel
+        Left = 0
+        Top = 0
+        Width = 997
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label36: TLabel
+          AlignWithMargins = True
+          Left = 138
+          Top = 3
+          Width = 250
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          AutoSize = False
+          Caption = #1042#1086#1076#1080#1090#1077#1083#1080
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+          ExplicitLeft = 15
+        end
+        object ButtonFlat9: TButtonFlat
+          AlignWithMargins = True
+          Left = 3
+          Top = 20
+          Width = 117
+          Height = 42
+          Margins.Top = 20
+          Margins.Bottom = 20
+          Align = alLeft
+          Caption = #1053#1072#1079#1072#1076
+          ColorNormal = 16052974
+          ColorOver = 15131097
+          ColorPressed = 16053232
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 5197647
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          FontOver.Charset = DEFAULT_CHARSET
+          FontOver.Color = 5197647
+          FontOver.Height = -13
+          FontOver.Name = 'Tahoma'
+          FontOver.Style = []
+          FontDown.Charset = DEFAULT_CHARSET
+          FontDown.Color = 5197647
+          FontDown.Height = -13
+          FontDown.Name = 'Tahoma'
+          FontDown.Style = []
+          IgnorBounds = True
+          ImageIndentLeft = 10
+          ImageIndentRight = 8
+          ImageIndex = 16
+          Images = ImageListSmall
+          OnClick = ButtonFlatDBConfigClick
+          RoundRectParam = 42
+          Shape = stRoundRect
+          ShowFocusRect = False
+          TabOrder = 0
+          TabStop = True
+          TextFormat = [tfSingleLine, tfVerticalCenter]
+          ExplicitLeft = 11
+          ExplicitTop = 28
+        end
+      end
+      object Panel58: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 977
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel59: TPanel
+          Left = 1
+          Top = 1
+          Width = 975
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object TableExDrivers: TTableEx
+            AlignWithMargins = True
+            Left = 5
+            Top = 45
+            Width = 965
+            Height = 557
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alClient
+            BorderStyle = bsNone
+            Color = clWhite
+            DefaultRowHeight = 30
+            TabOrder = 0
+            ItemIndex = -1
+            GetData = TableExDriversGetData
+            Columns = <>
+            CanNoSelect = False
+            ItemCount = 1
+            LineColor = clWhite
+            LineColorXor = clWhite
+            LineHotColor = 16250610
+            LineSelColor = 14803425
+            ColumnsColor = 15329769
+            FontHotLine.Charset = DEFAULT_CHARSET
+            FontHotLine.Color = 2631720
+            FontHotLine.Height = -13
+            FontHotLine.Name = 'Tahoma'
+            FontHotLine.Style = []
+            FontLine.Charset = DEFAULT_CHARSET
+            FontLine.Color = 2631720
+            FontLine.Height = -13
+            FontLine.Name = 'Tahoma'
+            FontLine.Style = []
+            FontSelLine.Charset = DEFAULT_CHARSET
+            FontSelLine.Color = 2631720
+            FontSelLine.Height = -13
+            FontSelLine.Name = 'Tahoma'
+            FontSelLine.Style = []
+            ColumnsFont.Charset = DEFAULT_CHARSET
+            ColumnsFont.Color = 2631720
+            ColumnsFont.Height = -13
+            ColumnsFont.Name = 'Tahoma'
+            ColumnsFont.Style = []
+            ShowFocus = True
+            DrawColumnBorded = False
+            FlashSelectedCol = True
+          end
+          object Panel60: TPanel
+            Left = 0
+            Top = 0
+            Width = 975
+            Height = 40
+            Align = alTop
+            BevelOuter = bvNone
+            Color = clWhite
+            ParentBackground = False
+            TabOrder = 1
+            object ButtonFlatDriversAdd: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 103
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1053#1086#1074#1099#1081
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatDriversAddClick
               RoundRectParam = 8
               Shape = stRoundRect
               ShowFocusRect = False
               TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatDriverEdit: TButtonFlat
+              AlignWithMargins = True
+              Left = 113
+              Top = 5
+              Width = 116
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 12
+              Images = ImageListSmall
+              OnClick = ButtonFlatDriverEditClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatDriverDelete: TButtonFlat
+              AlignWithMargins = True
+              Left = 234
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1059#1076#1072#1083#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 4
+              Images = ImageListSmall
+              OnClick = ButtonFlatClientsDelClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 2
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatDriversUpdate: TButtonFlat
+              AlignWithMargins = True
+              Left = 929
+              Top = 5
+              Width = 41
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 5
+              Margins.Bottom = 5
+              Align = alRight
+              Caption = ''
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 13
+              Images = ImageListSmall
+              OnClick = ButtonFlatDriversUpdateClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 3
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+        end
+      end
+    end
+    object PanelTableClients: TPanel
+      Left = 0
+      Top = 0
+      Width = 997
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 0
+      Visible = False
+      object PanelTableClientHead: TPanel
+        Left = 0
+        Top = 0
+        Width = 997
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label3: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 3
+          Width = 250
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          AutoSize = False
+          Caption = #1050#1083#1080#1077#1085#1090#1099
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+        end
+      end
+      object PanelTableClientsClient: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 977
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel5: TPanel
+          Left = 1
+          Top = 1
+          Width = 975
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object TableExClients: TTableEx
+            AlignWithMargins = True
+            Left = 5
+            Top = 45
+            Width = 965
+            Height = 557
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alClient
+            BorderStyle = bsNone
+            Color = clWhite
+            DefaultRowHeight = 30
+            TabOrder = 0
+            ItemIndex = -1
+            GetData = TableExClientsGetData
+            Columns = <>
+            CanNoSelect = False
+            ItemCount = 1
+            LineColor = clWhite
+            LineColorXor = clWhite
+            LineHotColor = 16250610
+            LineSelColor = 14803425
+            ColumnsColor = 15329769
+            FontHotLine.Charset = DEFAULT_CHARSET
+            FontHotLine.Color = 2631720
+            FontHotLine.Height = -13
+            FontHotLine.Name = 'Tahoma'
+            FontHotLine.Style = []
+            FontLine.Charset = DEFAULT_CHARSET
+            FontLine.Color = 2631720
+            FontLine.Height = -13
+            FontLine.Name = 'Tahoma'
+            FontLine.Style = []
+            FontSelLine.Charset = DEFAULT_CHARSET
+            FontSelLine.Color = 2631720
+            FontSelLine.Height = -13
+            FontSelLine.Name = 'Tahoma'
+            FontSelLine.Style = []
+            ColumnsFont.Charset = DEFAULT_CHARSET
+            ColumnsFont.Color = 2631720
+            ColumnsFont.Height = -13
+            ColumnsFont.Name = 'Tahoma'
+            ColumnsFont.Style = []
+            ShowFocus = True
+            DrawColumnBorded = False
+            FlashSelectedCol = True
+          end
+          object Panel6: TPanel
+            Left = 0
+            Top = 0
+            Width = 975
+            Height = 40
+            Align = alTop
+            BevelOuter = bvNone
+            Color = clWhite
+            ParentBackground = False
+            TabOrder = 1
+            object ButtonFlatClientsAdd: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 103
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1053#1086#1074#1099#1081
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatClientsAddClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatClientsEdit: TButtonFlat
+              AlignWithMargins = True
+              Left = 113
+              Top = 5
+              Width = 116
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1048#1079#1084#1077#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 12
+              Images = ImageListSmall
+              OnClick = ButtonFlatClientsEditClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatClientsDel: TButtonFlat
+              AlignWithMargins = True
+              Left = 234
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1059#1076#1072#1083#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 4
+              Images = ImageListSmall
+              OnClick = ButtonFlatClientsDelClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 2
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatClientsLoad: TButtonFlat
+              AlignWithMargins = True
+              Left = 929
+              Top = 5
+              Width = 41
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 5
+              Margins.Bottom = 5
+              Align = alRight
+              Caption = ''
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 13
+              Images = ImageListSmall
+              OnClick = ButtonFlatClientsLoadClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 3
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+        end
+      end
+    end
+    object PanelStorageItem: TPanel
+      Left = 0
+      Top = 0
+      Width = 997
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 9
+      Visible = False
+      object Panel47: TPanel
+        Left = 0
+        Top = 0
+        Width = 997
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label24: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 3
+          Width = 320
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          AutoSize = False
+          Caption = #1055#1086#1089#1090#1091#1087#1083#1077#1085#1080#1077' '#1090#1086#1074#1072#1088#1072
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+        end
+      end
+      object Panel48: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 977
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel49: TPanel
+          Left = 1
+          Top = 1
+          Width = 975
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object Panel50: TPanel
+            Left = 0
+            Top = 0
+            Width = 975
+            Height = 40
+            Align = alTop
+            BevelOuter = bvNone
+            Color = clWhite
+            ParentBackground = False
+            TabOrder = 0
+            object ButtonFlatStorageItemSave: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 127
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 6
+              Images = ImageListSmall
+              OnClick = ButtonFlatStorageItemSaveClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatStorageItemClose: TButtonFlat
+              AlignWithMargins = True
+              Left = 137
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1047#1072#1082#1088#1099#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 5
+              Images = ImageListSmall
+              OnClick = ButtonFlatStorageItemCloseClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+          object Panel51: TPanel
+            AlignWithMargins = True
+            Left = 5
+            Top = 45
+            Width = 965
+            Height = 557
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = 16250610
+            ParentBackground = False
+            TabOrder = 1
+            object Label25: TLabel
+              Left = 17
+              Top = 24
+              Width = 39
+              Height = 17
+              Caption = #1058#1086#1074#1072#1088
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label26: TLabel
+              Left = 17
+              Top = 55
+              Width = 45
+              Height = 17
+              Caption = #1050#1086#1083'-'#1074#1086
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object ComboBoxStorageItemProduct: TComboBox
+              Left = 114
+              Top = 21
+              Width = 290
+              Height = 25
+              TabOrder = 0
+              OnChange = ComboBoxSelOrderClientChange
+            end
+            object SpinEditStorageItemAmount: TlkSpinEdit
+              Left = 114
+              Top = 52
+              Width = 145
+              Height = 25
+              MaxValue = 99999999
+              MinValue = 1
+              TabOrder = 1
+              Value = 1
+            end
+            object ButtonFlatStorageItemAddProduct: TButtonFlat
+              Left = 410
+              Top = 21
+              Width = 138
+              Height = 25
+              Caption = #1053#1086#1074#1099#1081' '#1090#1086#1074#1072#1088
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindAddClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 2
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+        end
+      end
+    end
+    object PanelProdKind: TPanel
+      Left = 0
+      Top = 0
+      Width = 997
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 5
+      Visible = False
+      object Panel30: TPanel
+        Left = 0
+        Top = 0
+        Width = 997
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object LabelSelProdKind: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 3
+          Width = 276
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          Caption = #1053#1086#1074#1099#1081' '#1074#1080#1076' '#1090#1086#1074#1072#1088#1072
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+          ExplicitHeight = 45
+        end
+      end
+      object Panel31: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 977
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel32: TPanel
+          Left = 1
+          Top = 1
+          Width = 975
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object Panel33: TPanel
+            Left = 0
+            Top = 0
+            Width = 975
+            Height = 40
+            Align = alTop
+            BevelOuter = bvNone
+            Color = clWhite
+            ParentBackground = False
+            TabOrder = 0
+            object ButtonFlatProdKindSave: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 127
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 6
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindSaveClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatProdKindClose: TButtonFlat
+              AlignWithMargins = True
+              Left = 137
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1047#1072#1082#1088#1099#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 5
+              Images = ImageListSmall
+              OnClick = ButtonFlatProdKindCloseClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+          object Panel34: TPanel
+            AlignWithMargins = True
+            Left = 5
+            Top = 45
+            Width = 965
+            Height = 557
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = 16250610
+            ParentBackground = False
+            TabOrder = 1
+            object Label18: TLabel
+              Left = 17
+              Top = 24
+              Width = 96
+              Height = 17
+              Caption = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label19: TLabel
+              Left = 17
+              Top = 55
+              Width = 62
+              Height = 17
+              Caption = #1054#1087#1080#1089#1072#1085#1080#1077
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label21: TLabel
+              Left = 17
+              Top = 86
+              Width = 92
+              Height = 17
+              Caption = #1045#1076'. '#1080#1079#1084#1077#1088#1077#1085#1080#1103
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object EditProdKindName: TEdit
+              Left = 119
+              Top = 21
+              Width = 466
+              Height = 25
+              TabOrder = 0
+              TextHint = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077' '#1074#1080#1076#1072' '#1090#1086#1074#1072#1088#1072
+            end
+            object EditProdKindComment: TEdit
+              Left = 119
+              Top = 52
+              Width = 466
+              Height = 25
+              TabOrder = 1
+              TextHint = #1054#1087#1080#1089#1072#1085#1080#1077' '#1074#1080#1076#1072' '#1090#1086#1074#1072#1088#1072
+            end
+            object ComboBoxProdKindUnit: TComboBox
+              Left = 119
+              Top = 83
+              Width = 154
+              Height = 25
+              Style = csDropDownList
+              TabOrder = 2
+              TextHint = #1045#1076#1080#1085#1080#1094#1099' '#1080#1079#1084#1077#1088#1077#1085#1080#1103
+            end
+          end
+        end
+      end
+    end
+    object PanelOrder: TPanel
+      Left = 0
+      Top = 0
+      Width = 997
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 2
+      Visible = False
+      object Panel12: TPanel
+        Left = 0
+        Top = 0
+        Width = 997
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object LabelSelectOrder: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 3
+          Width = 250
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          AutoSize = False
+          Caption = #1047#1072#1082#1072#1079' 000001'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+        end
+      end
+      object Panel13: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 977
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel14: TPanel
+          Left = 1
+          Top = 1
+          Width = 975
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object Panel15: TPanel
+            Left = 0
+            Top = 0
+            Width = 975
+            Height = 40
+            Align = alTop
+            BevelOuter = bvNone
+            Color = clWhite
+            ParentBackground = False
+            TabOrder = 0
+            object ButtonFlatOrderSave: TButtonFlat
+              AlignWithMargins = True
+              Left = 5
+              Top = 5
+              Width = 127
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 6
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderSaveClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatOrderClose: TButtonFlat
+              AlignWithMargins = True
+              Left = 137
+              Top = 5
+              Width = 108
+              Height = 30
+              Margins.Left = 5
+              Margins.Top = 5
+              Margins.Right = 0
+              Margins.Bottom = 5
+              Align = alLeft
+              Caption = #1047#1072#1082#1088#1099#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 5
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderCloseClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+          end
+          object Panel7: TPanel
+            AlignWithMargins = True
+            Left = 5
+            Top = 45
+            Width = 965
+            Height = 557
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alClient
+            BevelOuter = bvNone
+            Color = 16250610
+            ParentBackground = False
+            TabOrder = 1
+            object Label5: TLabel
+              Left = 17
+              Top = 24
+              Width = 45
+              Height = 17
+              Caption = #1050#1083#1080#1077#1085#1090
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label7: TLabel
+              Left = 17
+              Top = 55
+              Width = 30
+              Height = 17
+              Caption = #1050#1091#1076#1072
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label8: TLabel
+              Left = 17
+              Top = 117
+              Width = 51
+              Height = 17
+              Caption = #1044#1072#1085#1085#1099#1077
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label9: TLabel
+              Left = 17
+              Top = 166
+              Width = 88
+              Height = 17
+              Caption = #1050#1086#1084#1084#1077#1085#1090#1072#1088#1080#1081
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label6: TLabel
+              Left = 17
+              Top = 86
+              Width = 36
+              Height = 17
+              Caption = #1050#1086#1075#1076#1072
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label16: TLabel
+              Left = 17
+              Top = 442
+              Width = 40
+              Height = 17
+              Caption = #1057#1090#1072#1090#1091#1089
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label27: TLabel
+              Left = 17
+              Top = 216
+              Width = 87
+              Height = 17
+              Caption = #1057#1086#1089#1090#1072#1074' '#1079#1072#1082#1072#1079#1072
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Label28: TLabel
+              Left = 17
+              Top = 473
+              Width = 60
+              Height = 17
+              Caption = #1042#1086#1076#1080#1090#1077#1083#1100
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object LabelOrderProductUnit: TLabel
+              Left = 527
+              Top = 216
+              Width = 58
+              Height = 17
+              AutoSize = False
+              Caption = #1096#1090'.'
+              EllipsisPosition = epEndEllipsis
+            end
+            object ComboBoxSelOrderClient: TComboBox
+              Left = 114
+              Top = 21
+              Width = 471
+              Height = 25
+              TabOrder = 0
+              OnChange = ComboBoxSelOrderClientChange
+            end
+            object ComboBoxSelOrderAddr: TComboBox
+              Left = 114
+              Top = 52
+              Width = 471
+              Height = 25
+              TabOrder = 1
+            end
+            object MemoSelOrderData: TMemo
+              Left = 114
+              Top = 114
+              Width = 471
+              Height = 43
+              ScrollBars = ssVertical
+              TabOrder = 2
+            end
+            object MemoSelOrderComment: TMemo
+              Left = 114
+              Top = 163
+              Width = 471
+              Height = 43
+              ScrollBars = ssVertical
+              TabOrder = 3
+            end
+            object DateTimePickerSelOrderTime: TDateTimePicker
+              Left = 231
+              Top = 83
+              Width = 66
+              Height = 24
+              Date = 43334.836574074080000000
+              Format = 'HH:mm'
+              Time = 43334.836574074080000000
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              Kind = dtkTime
+              ParentFont = False
+              TabOrder = 4
+              OnChange = DateTimePickerSelOrderTimeChange
+            end
+            object DateTimePickerSelOrderDate: TDateTimePicker
+              Left = 114
+              Top = 83
+              Width = 111
+              Height = 24
+              Date = 43334.128251226850000000
+              Time = 43334.128251226850000000
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 5
+            end
+            object ButtonFlatOrderDraft: TButtonFlat
+              Left = 114
+              Top = 439
+              Width = 109
+              Height = 25
+              Caption = #1063#1077#1088#1085#1086#1074#1080#1082
+              ColorNormal = 16242577
+              ColorOver = 16442294
+              ColorPressed = 16242577
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 8
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderDraftClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 6
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatOrderNormal: TButtonFlat
+              Tag = 1
+              Left = 229
+              Top = 439
+              Width = 100
+              Height = 25
+              Caption = #1054#1078#1080#1076#1072#1077#1090
+              ColorNormal = 16250610
+              ColorOver = 16442294
+              ColorPressed = 16242577
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 9
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderDraftClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 7
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatOrderDelivery: TButtonFlat
+              Tag = 2
+              Left = 335
+              Top = 439
+              Width = 130
+              Height = 25
+              Caption = #1044#1086#1089#1090#1072#1074#1083#1103#1077#1090#1089#1103
+              ColorNormal = 16250610
+              ColorOver = 16442294
+              ColorPressed = 16242577
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 10
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderDraftClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 8
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatOrderDelivered: TButtonFlat
+              Tag = 3
+              Left = 471
+              Top = 439
+              Width = 114
+              Height = 25
+              Caption = #1044#1086#1089#1090#1072#1074#1083#1077#1085
+              ColorNormal = 16250610
+              ColorOver = 16442294
+              ColorPressed = 16242577
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 8
+              ImageIndex = 11
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderDraftClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 9
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatOrderNewClient: TButtonFlat
+              Left = 591
+              Top = 21
+              Width = 150
+              Height = 25
+              Caption = #1053#1086#1074#1099#1081' '#1082#1083#1080#1077#1085#1090
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Segoe UI'
+              FontOver.Style = [fsBold]
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Segoe UI'
+              FontDown.Style = [fsBold]
+              IgnorBounds = True
+              ImageIndentLeft = 4
+              ImageIndentRight = 5
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderNewClientClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 10
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object TableExOrderProducts: TTableEx
+              Left = 114
+              Top = 243
+              Width = 471
+              Height = 190
+              Color = clWhite
+              DefaultRowHeight = 25
+              TabOrder = 11
+              ItemIndex = -1
+              GetData = TableExOrderProductsGetData
+              Columns = <>
+              CanNoSelect = False
+              ItemCount = 1
+              LineColor = clWhite
+              LineColorXor = clWhite
+              LineHotColor = 16250610
+              LineSelColor = 14803425
+              ColumnsColor = 15329769
+              FontHotLine.Charset = DEFAULT_CHARSET
+              FontHotLine.Color = 2631720
+              FontHotLine.Height = -13
+              FontHotLine.Name = 'Tahoma'
+              FontHotLine.Style = []
+              FontLine.Charset = DEFAULT_CHARSET
+              FontLine.Color = 2631720
+              FontLine.Height = -13
+              FontLine.Name = 'Tahoma'
+              FontLine.Style = []
+              FontSelLine.Charset = DEFAULT_CHARSET
+              FontSelLine.Color = 2631720
+              FontSelLine.Height = -13
+              FontSelLine.Name = 'Tahoma'
+              FontSelLine.Style = []
+              ColumnsFont.Charset = DEFAULT_CHARSET
+              ColumnsFont.Color = 2631720
+              ColumnsFont.Height = -13
+              ColumnsFont.Name = 'Tahoma'
+              ColumnsFont.Style = []
+              ShowFocus = True
+              DrawColumnBorded = False
+            end
+            object ButtonFlatCurOrderProductAdd: TButtonFlat
+              Left = 591
+              Top = 249
+              Width = 150
+              Height = 25
+              Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 4
+              ImageIndentRight = 5
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatCurOrderProductAddClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 12
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatCurOrderProductDelete: TButtonFlat
+              Left = 591
+              Top = 280
+              Width = 150
+              Height = 25
+              Caption = #1059#1073#1088#1072#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 4
+              ImageIndentRight = 5
+              ImageIndex = 3
+              Images = ImageListSmall
+              OnClick = ButtonFlatCurOrderProductDeleteClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 13
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatCurOrderProductClear: TButtonFlat
+              Left = 591
+              Top = 311
+              Width = 150
+              Height = 25
+              Caption = #1054#1095#1080#1089#1090#1080#1090#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 4
+              ImageIndentRight = 5
+              ImageIndex = 4
+              Images = ImageListSmall
+              OnClick = ButtonFlatCurOrderProductClearClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 14
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object ComboBoxSelOrderDriver: TComboBox
+              Left = 114
+              Top = 470
+              Width = 471
+              Height = 25
+              TabOrder = 15
+            end
+            object ButtonFlatOrderNewDriver: TButtonFlat
+              Left = 591
+              Top = 470
+              Width = 150
+              Height = 25
+              Caption = #1053#1086#1074#1099#1081' '#1074#1086#1076#1080#1090#1077#1083#1100
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 4
+              ImageIndentRight = 5
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderNewDriverClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 16
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object SpinEditOrderProductAmount: TlkSpinEdit
+              Left = 440
+              Top = 212
+              Width = 81
+              Height = 25
+              MaxValue = 99999999
+              MinValue = 1
+              TabOrder = 17
+              Value = 1
+            end
+            object ComboBoxOrderProduct: TComboBox
+              Left = 114
+              Top = 212
+              Width = 289
+              Height = 25
+              TabOrder = 18
+              OnChange = ComboBoxOrderProductChange
+            end
+            object ButtonFlatOrderProductNew: TButtonFlat
+              Left = 409
+              Top = 212
+              Width = 25
+              Height = 25
+              Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1085#1086#1074#1099#1081' '#1074#1080#1076' '#1090#1086#1074#1072#1088#1072
+              Caption = ''
+              ColorNormal = 16250610
+              ColorOver = 16514041
+              ColorPressed = 15789800
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 0
+              ImageIndex = 0
+              Images = ImageListSmall
+              OnClick = ButtonFlatOrderProductNewClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 19
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
             end
@@ -5476,7 +5440,7 @@ object FormMain: TFormMain
     Left = 1008
     Top = 8
     Bitmap = {
-      494C010103000500100020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000500200020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -6023,7 +5987,7 @@ object FormMain: TFormMain
     Left = 1129
     Top = 9
     Bitmap = {
-      494C010111001500100018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010111001500200018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006000000078000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
