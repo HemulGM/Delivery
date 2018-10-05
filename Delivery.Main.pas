@@ -283,14 +283,13 @@ type
     Label28: TLabel;
     ComboBoxSelOrderDriver: TComboBox;
     ButtonFlatOrderNewDriver: TButtonFlat;
-    SpinEditOrderProductAmount: TlkSpinEdit;
-    ComboBoxOrderProduct: TComboBox;
-    ButtonFlatOrderProductNew: TButtonFlat;
-    LabelOrderProductUnit: TLabel;
     ButtonFlat5: TButtonFlat;
     ButtonFlat11: TButtonFlat;
     ButtonFlat10: TButtonFlat;
     ButtonFlat9: TButtonFlat;
+    ComboBoxOrderProduct: TComboBox;
+    SpinEditOrderProductAmount: TlkSpinEdit;
+    LabelOrderProductUnit: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure TableExClientsGetData(FCol, FRow: Integer; var Value: string);
     procedure TableExAddrGetData(FCol, FRow: Integer; var Value: string);
@@ -364,7 +363,6 @@ type
     procedure ButtonFlatCurOrderProductClearClick(Sender: TObject);
     procedure TableExOrderProductsGetData(FCol, FRow: Integer;
       var Value: string);
-    procedure ButtonFlatOrderProductNewClick(Sender: TObject);
     procedure ComboBoxOrderProductChange(Sender: TObject);
    private
     FAppState:TAppState;
@@ -604,11 +602,6 @@ end;
 procedure TFormMain.ButtonFlatOrderNewDriverClick(Sender: TObject);
 begin
  AddDriver;
-end;
-
-procedure TFormMain.ButtonFlatOrderProductNewClick(Sender: TObject);
-begin
- AddProdKind;
 end;
 
 procedure TFormMain.ButtonFlatOrderSaveClick(Sender: TObject);
@@ -1163,14 +1156,14 @@ begin
    AddColumn('Дата обновления', 200);
    AddColumn('', 10);
   end;
-
+     {
  with TableExOrderProducts do
   begin
    AddColumn('', 32);
    AddColumn('Вид товара', 200);
    AddColumn('Кол-во', 70);
    AddColumn('', 10);
-  end;
+  end;   }
 
  with TableExStorageProtocol do
   begin

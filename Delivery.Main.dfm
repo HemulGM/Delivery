@@ -74,6 +74,7 @@ object FormMain: TFormMain
         Font.Style = []
         Font.Quality = fqAntialiased
         ParentFont = False
+        Transparent = False
         Layout = tlCenter
         ExplicitLeft = 0
         ExplicitTop = 0
@@ -3245,8 +3246,6 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
-          ExplicitLeft = 11
-          ExplicitTop = 28
         end
       end
       object Panel37: TPanel
@@ -3584,8 +3583,6 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
-          ExplicitLeft = 11
-          ExplicitTop = 28
         end
       end
       object Panel58: TPanel
@@ -4921,12 +4918,12 @@ object FormMain: TFormMain
               ParentFont = False
             end
             object LabelOrderProductUnit: TLabel
-              Left = 527
-              Top = 216
-              Width = 58
+              Left = 438
+              Top = 386
+              Width = 42
               Height = 17
               AutoSize = False
-              Caption = #1096#1090'.'
+              Caption = #1075#1088#1072#1084#1084
               EllipsisPosition = epEndEllipsis
             end
             object ComboBoxSelOrderClient: TComboBox
@@ -5179,15 +5176,33 @@ object FormMain: TFormMain
             end
             object TableExOrderProducts: TTableEx
               Left = 114
-              Top = 243
+              Top = 212
               Width = 471
-              Height = 190
+              Height = 165
               Color = clWhite
               DefaultRowHeight = 25
               TabOrder = 11
               ItemIndex = -1
               GetData = TableExOrderProductsGetData
-              Columns = <>
+              Columns = <
+                item
+                  Width = 32
+                  MinWidth = 32
+                end
+                item
+                  Caption = #1042#1080#1076' '#1090#1086#1074#1072#1088#1072
+                  Width = 200
+                  MinWidth = 200
+                end
+                item
+                  Caption = #1050#1086#1083'-'#1074#1086
+                  Width = 70
+                  MinWidth = 70
+                end
+                item
+                  Width = 164
+                  MinWidth = 10
+                end>
               CanNoSelect = False
               ItemCount = 1
               LineColor = clWhite
@@ -5219,9 +5234,9 @@ object FormMain: TFormMain
               DrawColumnBorded = False
             end
             object ButtonFlatCurOrderProductAdd: TButtonFlat
-              Left = 591
-              Top = 249
-              Width = 150
+              Left = 486
+              Top = 383
+              Width = 99
               Height = 25
               Caption = #1044#1086#1073#1072#1074#1080#1090#1100
               ColorNormal = 16250610
@@ -5257,7 +5272,7 @@ object FormMain: TFormMain
             end
             object ButtonFlatCurOrderProductDelete: TButtonFlat
               Left = 591
-              Top = 280
+              Top = 212
               Width = 150
               Height = 25
               Caption = #1059#1073#1088#1072#1090#1100
@@ -5294,7 +5309,7 @@ object FormMain: TFormMain
             end
             object ButtonFlatCurOrderProductClear: TButtonFlat
               Left = 591
-              Top = 311
+              Top = 243
               Width = 150
               Height = 25
               Caption = #1054#1095#1080#1089#1090#1080#1090#1100
@@ -5373,60 +5388,23 @@ object FormMain: TFormMain
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
             end
+            object ComboBoxOrderProduct: TComboBox
+              Left = 114
+              Top = 383
+              Width = 246
+              Height = 25
+              TabOrder = 17
+              OnChange = ComboBoxOrderProductChange
+            end
             object SpinEditOrderProductAmount: TlkSpinEdit
-              Left = 440
-              Top = 212
-              Width = 81
+              Left = 366
+              Top = 383
+              Width = 66
               Height = 25
               MaxValue = 99999999
               MinValue = 1
-              TabOrder = 17
-              Value = 1
-            end
-            object ComboBoxOrderProduct: TComboBox
-              Left = 114
-              Top = 212
-              Width = 289
-              Height = 25
               TabOrder = 18
-              OnChange = ComboBoxOrderProductChange
-            end
-            object ButtonFlatOrderProductNew: TButtonFlat
-              Left = 409
-              Top = 212
-              Width = 25
-              Height = 25
-              Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1085#1086#1074#1099#1081' '#1074#1080#1076' '#1090#1086#1074#1072#1088#1072
-              Caption = ''
-              ColorNormal = 16250610
-              ColorOver = 16514041
-              ColorPressed = 15789800
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Segoe UI'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 0
-              ImageIndex = 0
-              Images = ImageListSmall
-              OnClick = ButtonFlatOrderProductNewClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 19
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              Value = 1
             end
           end
         end
@@ -5440,7 +5418,7 @@ object FormMain: TFormMain
     Left = 1008
     Top = 8
     Bitmap = {
-      494C010103000500200020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000500340020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -5987,7 +5965,7 @@ object FormMain: TFormMain
     Left = 1129
     Top = 9
     Bitmap = {
-      494C010111001500200018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010111001500340018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006000000078000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
