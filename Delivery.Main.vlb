@@ -127,14 +127,8 @@ Coordinates=609,850,149,36
 [ButtonFlatClientsDel]
 Coordinates=467,850,132,36
 
-[ButtonFlat1]
-Coordinates=377,850,80,36
-
 [EditSearch]
 Coordinates=669,348,77,58
-
-[Panel2]
-Coordinates=726,484,54,58
 
 [Panel27]
 Coordinates=1132,552,62,58
@@ -410,9 +404,6 @@ Coordinates=1509,416,54,58
 [ButtonFlatStorageItemClose]
 Coordinates=820,712,176,36
 
-[Shape5]
-Coordinates=751,712,59,36
-
 [ButtonFlatClientsLoad]
 Coordinates=600,712,141,36
 
@@ -630,7 +621,7 @@ Coordinates=1567,552,145,36
 Coordinates=1411,552,146,36
 
 []
-Coordinates=476,144,62,58
+Coordinates=751,712,59,36
 
 [ButtonFlatDriversAdd]
 Coordinates=1047,620,88,36
@@ -643,4 +634,10 @@ Coordinates=1333,620,88,36
 
 [ButtonFlatDriversUpdate]
 Coordinates=737,620,88,36
+
+[PanelMainSearch]
+Coordinates=726,484,54,58
+
+[ButtonFlatMainSearch]
+Coordinates=377,850,80,36
 

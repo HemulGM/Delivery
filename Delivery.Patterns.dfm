@@ -1,0 +1,136 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 371
+  ClientWidth = 635
+  Color = 16250610
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label12: TLabel
+    Left = 17
+    Top = 56
+    Width = 33
+    Height = 17
+    Caption = #1055#1086#1083#1077
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 6250335
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Panel24: TPanel
+    Left = 0
+    Top = 0
+    Width = 635
+    Height = 40
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = -340
+    ExplicitWidth = 975
+    object ButtonFlatClientSave: TButtonFlat
+      AlignWithMargins = True
+      Left = 5
+      Top = 5
+      Width = 130
+      Height = 30
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 0
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+      ColorNormal = 16250610
+      ColorOver = 15789800
+      ColorPressed = 14276036
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6250335
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      FontOver.Charset = DEFAULT_CHARSET
+      FontOver.Color = 6250335
+      FontOver.Height = -13
+      FontOver.Name = 'Segoe UI'
+      FontOver.Style = [fsBold]
+      FontDown.Charset = DEFAULT_CHARSET
+      FontDown.Color = 6250335
+      FontDown.Height = -13
+      FontDown.Name = 'Segoe UI'
+      FontDown.Style = [fsBold]
+      GroupItemKind = giLeft
+      IgnorBounds = True
+      ImageIndentLeft = 5
+      ImageIndentRight = -5
+      ImageIndex = 6
+      RoundRectParam = 8
+      Shape = stRoundRect
+      ShowFocusRect = False
+      TabOrder = 0
+      TabStop = True
+      TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+      ExplicitLeft = 0
+    end
+    object ButtonFlatClientClose: TButtonFlat
+      AlignWithMargins = True
+      Left = 135
+      Top = 5
+      Width = 130
+      Height = 30
+      Margins.Left = 0
+      Margins.Top = 5
+      Margins.Right = 0
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = #1047#1072#1082#1088#1099#1090#1100
+      ColorNormal = 16250610
+      ColorOver = 15789800
+      ColorPressed = 14276036
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6250335
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      FontOver.Charset = DEFAULT_CHARSET
+      FontOver.Color = 6250335
+      FontOver.Height = -13
+      FontOver.Name = 'Segoe UI'
+      FontOver.Style = [fsBold]
+      FontDown.Charset = DEFAULT_CHARSET
+      FontDown.Color = 6250335
+      FontDown.Height = -13
+      FontDown.Name = 'Segoe UI'
+      FontDown.Style = [fsBold]
+      GroupItemKind = giRight
+      IgnorBounds = True
+      ImageIndentLeft = 5
+      ImageIndentRight = -5
+      ImageIndex = 5
+      RoundRectParam = 8
+      Shape = stRoundRect
+      ShowFocusRect = False
+      TabOrder = 1
+      TabStop = True
+      TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+    end
+  end
+  object EditClientF: TEdit
+    Left = 114
+    Top = 53
+    Width = 145
+    Height = 25
+    TabOrder = 1
+    TextHint = #1060#1072#1084#1080#1083#1080#1103
+  end
+end

@@ -16,7 +16,9 @@ uses
   Delivery.Table.Storage in 'Delivery.Table.Storage.pas',
   Delivery.Table.Storage.Protocol in 'Delivery.Table.Storage.Protocol.pas',
   Delivery.Table.Orders.Products in 'Delivery.Table.Orders.Products.pas',
-  Delivery.Table.Drivers in 'Delivery.Table.Drivers.pas';
+  Delivery.Table.Drivers in 'Delivery.Table.Drivers.pas',
+  Delivery.Patterns in 'Delivery.Patterns.pas' {Form1},
+  Delivery.Table.Drivers.Calendar in 'Delivery.Table.Drivers.Calendar.pas';
 
 {$R *.res}
 
@@ -24,5 +26,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFormMain, FormMain);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

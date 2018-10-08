@@ -14,7 +14,8 @@ uses
   Delivery.Table.Clients, Delivery.Table.Addresses, Delivery.Table.Orders,
   Delivery.Table.History, Delivery.Table.Storage.Kind, Delivery.DB,
   Delivery.Table.Storage, Delivery.Table.Storage.Protocol,
-  Delivery.Table.Orders.Products, Delivery.Table.Drivers;
+  Delivery.Table.Orders.Products, Delivery.Table.Drivers,
+  Delivery.Table.Drivers.Calendar;
 
 type
   TAppState = record
@@ -44,9 +45,9 @@ type
     Panel1: TPanel;
     Label1: TLabel;
     Label2: TLabel;
-    Panel2: TPanel;
+    PanelMainSearch: TPanel;
     EditSearch: TEdit;
-    ButtonFlat1: TButtonFlat;
+    ButtonFlatMainSearch: TButtonFlat;
     ImageList24: TImageList;
     Panel3: TPanel;
     LabelTime: TLabel;
@@ -228,7 +229,6 @@ type
     ButtonFlatOrderSetState3: TButtonFlat;
     ButtonFlatOrderSetState2: TButtonFlat;
     ButtonFlatOrderSetState1: TButtonFlat;
-    Shape5: TShape;
     Label27: TLabel;
     TableExOrderProducts: TTableEx;
     ButtonFlatStorageProtocol: TButtonFlat;
@@ -283,13 +283,29 @@ type
     Label28: TLabel;
     ComboBoxSelOrderDriver: TComboBox;
     ButtonFlatOrderNewDriver: TButtonFlat;
-    ButtonFlat5: TButtonFlat;
     ButtonFlat11: TButtonFlat;
     ButtonFlat10: TButtonFlat;
     ButtonFlat9: TButtonFlat;
     ComboBoxOrderProduct: TComboBox;
     SpinEditOrderProductAmount: TlkSpinEdit;
     LabelOrderProductUnit: TLabel;
+    Shape6: TShape;
+    ButtonFlat1: TButtonFlat;
+    ButtonFlat12: TButtonFlat;
+    Shape7: TShape;
+    Shape8: TShape;
+    Shape9: TShape;
+    Shape10: TShape;
+    PanelCalendar: TPanel;
+    Panel16: TPanel;
+    Label29: TLabel;
+    Panel52: TPanel;
+    Panel66: TPanel;
+    Panel67: TPanel;
+    TableExCalendar: TTableEx;
+    Panel2: TPanel;
+    SpinEditCalendarYear: TlkSpinEdit;
+    ComboBoxCalendarMonth: TComboBox;
     procedure FormCreate(Sender: TObject);
     procedure TableExClientsGetData(FCol, FRow: Integer; var Value: string);
     procedure TableExAddrGetData(FCol, FRow: Integer; var Value: string);
@@ -364,6 +380,10 @@ type
     procedure TableExOrderProductsGetData(FCol, FRow: Integer;
       var Value: string);
     procedure ComboBoxOrderProductChange(Sender: TObject);
+    procedure ButtonFlatStorageItemAddProductClick(Sender: TObject);
+    procedure TableExCalendarGetData(FCol, FRow: Integer; var Value: string);
+    procedure ButtonFlatCalendarClick(Sender: TObject);
+    procedure ComboBoxCalendarMonthChange(Sender: TObject);
    private
     FAppState:TAppState;
     FNotify:TNotifyPanel;
@@ -381,6 +401,7 @@ type
     FStorage:TTableStorage;
     FStorageProtocol:TTableStorageProtocol;
     FDrivers:TTableDrivers;
+    FDriverCalendar:TTableDriverCalendar;
 
     procedure CreateTables;
     procedure SetMenuIconColor(Color: TColor);
@@ -390,6 +411,7 @@ type
     procedure UpdateFeed;
     procedure InitTables;
     procedure CreateParams(var Params: TCreateParams); overload;
+    procedure UpdateCalendar;
   public
     function AddClient:Integer;
     function EditClient:Integer;
@@ -431,9 +453,16 @@ var
   FormMain: TFormMain;
 
 implementation
- uses Math;
+ uses Math, System.DateUtils;
 
 {$R *.dfm}
+
+function CurrentMonth: Word;
+var SystemTime: TSystemTime;
+begin
+ GetLocalTime(SystemTime);
+ Result:=SystemTime.wMonth;
+end;
 
 procedure TFormMain.CreateParams(var Params:TCreateParams);
 begin
@@ -769,6 +798,11 @@ begin
  PopupMenuAdd.Popup(Pt.X, Pt.Y+ButtonFlatNewOrder.Height);
 end;
 
+procedure TFormMain.ButtonFlatCalendarClick(Sender: TObject);
+begin
+ OpenPage(PanelCalendar);
+end;
+
 procedure TFormMain.ButtonFlatClientCloseClick(Sender: TObject);
 begin
  FAppState.FClientAddr.Clear;
@@ -795,9 +829,25 @@ end;
 
 procedure TFormMain.ButtonFlatCurOrderProductAddClick(Sender: TObject);
 var ItemInc:TItemOrderProduct;
+    i:Integer;
 begin
  if not IndexInList(ComboBoxOrderProduct.ItemIndex, FProdKind.Count) then
   if ShowWrongInfo('Необходимо выбрать Вид товара') then Exit;
+ //Если есть уже такой тип товара в списке
+ for i := 0 to FAppState.CurOrderProducts.Count-1 do
+  if FAppState.CurOrderProducts[i].Kind = FProdKind[ComboBoxOrderProduct.ItemIndex].ID then
+   begin
+    ItemInc:=FAppState.CurOrderProducts[i];
+    if not FStorageProtocol.AllowDec(ItemInc.Kind, ItemInc.Amount+SpinEditOrderProductAmount.Value) then
+     if ShowWrongInfo('Недостаточное количество на складе') then Exit;
+    ItemInc.Amount:=ItemInc.Amount+SpinEditOrderProductAmount.Value;
+    ItemInc.Update;
+    Exit;
+   end;
+
+ //Если нет такого товара в списке
+ if not FStorageProtocol.AllowDec(FProdKind[ComboBoxOrderProduct.ItemIndex].ID, SpinEditOrderProductAmount.Value) then
+  if ShowWrongInfo('Недостаточное количество на складе') then Exit;
  ItemInc:=TItemOrderProduct.Create(FAppState.CurOrderProducts);
  ItemInc.OrderNum:=FAppState.CurOrder.Number;
  ItemInc.Kind:=FProdKind[ComboBoxOrderProduct.ItemIndex].ID;
@@ -807,6 +857,7 @@ begin
  ItemInc.Amount:=SpinEditOrderProductAmount.Value;
  FAppState.CurOrderProducts.Insert(0, ItemInc);
  ItemInc.Update;
+ //
  FAppState.CurOrderProducts.UpdateTable;
  ComboBoxOrderProduct.ItemIndex:=-1;
  ComboBoxOrderProduct.Text:='';
@@ -1013,6 +1064,11 @@ begin
  OpenPage(PanelTableStorage);
 end;
 
+procedure TFormMain.ButtonFlatStorageItemAddProductClick(Sender: TObject);
+begin
+ AddProdKind;
+end;
+
 procedure TFormMain.ButtonFlatStorageItemCloseClick(Sender: TObject);
 begin
  FAppState.CloseModal;
@@ -1074,6 +1130,11 @@ begin
  Result:=FAppState.FModals <= 0;
  if not Result then
   FNotify.Warning('Внимание', 'Сначала закончите работу с формой!');
+end;
+
+procedure TFormMain.ComboBoxCalendarMonthChange(Sender: TObject);
+begin
+ UpdateCalendar;
 end;
 
 procedure TFormMain.ComboBoxOrderProductChange(Sender: TObject);
@@ -1375,11 +1436,15 @@ end;
 procedure TFormMain.EditSearchEnter(Sender: TObject);
 begin
  if EditSearch.Text = 'искать клиента, заказ, прочее...' then EditSearch.Text:='';
+ PanelMainSearch.Color:=$007A6F67;
+ ButtonFlatMainSearch.Repaint;
 end;
 
 procedure TFormMain.EditSearchExit(Sender: TObject);
 begin
  if EditSearch.Text = '' then EditSearch.Text:='искать клиента, заказ, прочее...';
+ PanelMainSearch.Color:=$00695C53;
+ ButtonFlatMainSearch.Repaint;
 end;
 
 function TFormMain.EditStorage: Integer;
@@ -1449,6 +1514,16 @@ begin
  FDrivers.AddTable(TableExDrivers);
  FDrivers.Load;
  FDrivers.UpdateTable;
+
+ FDriverCalendar:=TTableDriverCalendar.Create(FCore);
+ FDriverCalendar.AddTable(TableExCalendar);
+ UpdateCalendar;
+ FDriverCalendar.UpdateTable;
+end;
+
+procedure TFormMain.UpdateCalendar;
+begin
+ FDriverCalendar.Reload(SpinEditCalendarYear.Value, ComboBoxCalendarMonth.ItemIndex+1);
 end;
 
 procedure TFormMain.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
@@ -1478,6 +1553,9 @@ begin
  //
  UpdateFeed;
  ShowPanel(PanelFeed);
+
+ SpinEditCalendarYear.Value:=CurrentYear;
+ ComboBoxCalendarMonth.ItemIndex:=CurrentMonth-1;
 end;
 
 procedure TFormMain.FormResize(Sender: TObject);
@@ -1492,6 +1570,22 @@ begin
  case FCol of
   1:Value:=FAddresses[FRow].Text
  else Value:='';
+ end;
+end;
+
+procedure TFormMain.TableExCalendarGetData(FCol, FRow: Integer; var Value: string);
+begin
+ Value:='';
+ if not IndexInList(FRow, FDriverCalendar.Count) then Exit;
+ case FCol of
+  0:Value:=FDriverCalendar[FRow].DriverName;
+ else
+  if IndexInList(FCol, TableExCalendar.Columns.Count) then
+   begin
+    if FDriverCalendar[FRow].Days[FCol].OrderCount > 0 then
+     Value:=FDriverCalendar[FRow].Days[FCol].OrderCount.ToString
+    else Value:='';
+   end;
  end;
 end;
 

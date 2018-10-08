@@ -116,6 +116,11 @@
         <DCCReference Include="Delivery.Table.Storage.Protocol.pas"/>
         <DCCReference Include="Delivery.Table.Orders.Products.pas"/>
         <DCCReference Include="Delivery.Table.Drivers.pas"/>
+        <DCCReference Include="Delivery.Patterns.pas">
+            <Form>Form1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Delivery.Table.Drivers.Calendar.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
