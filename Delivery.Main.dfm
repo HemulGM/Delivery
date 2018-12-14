@@ -29,7 +29,6 @@ object FormMain: TFormMain
     Color = 6904915
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 1232
     object Shape1: TShape
       Left = 817
       Top = 0
@@ -738,7 +737,6 @@ object FormMain: TFormMain
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 997
     object PanelDriver: TPanel
       Left = 0
       Top = 0
@@ -748,7 +746,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 12
       Visible = False
-      ExplicitWidth = 997
       object Panel61: TPanel
         Left = 0
         Top = 0
@@ -757,7 +754,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object LabelCurDriver: TLabel
           AlignWithMargins = True
           Left = 15
@@ -795,7 +791,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel63: TPanel
           Left = 1
           Top = 1
@@ -806,7 +801,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel64: TPanel
             Left = 0
             Top = 0
@@ -817,7 +811,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 975
             object ButtonFlatDriverSave: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -922,7 +915,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 965
             object Label38: TLabel
               Left = 17
               Top = 24
@@ -1067,7 +1059,6 @@ object FormMain: TFormMain
             ParentBackground = False
             TabOrder = 2
             Visible = False
-            ExplicitWidth = 965
             object Label43: TLabel
               AlignWithMargins = True
               Left = 10
@@ -1139,346 +1130,6 @@ object FormMain: TFormMain
         end
       end
     end
-    object PanelDBConfig: TPanel
-      Left = 0
-      Top = 0
-      Width = 985
-      Height = 685
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 7
-      Visible = False
-      ExplicitWidth = 997
-      object Panel35: TPanel
-        Left = 0
-        Top = 0
-        Width = 985
-        Height = 82
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        ExplicitWidth = 997
-        object Label22: TLabel
-          AlignWithMargins = True
-          Left = 15
-          Top = 3
-          Width = 220
-          Height = 76
-          Margins.Left = 15
-          Align = alLeft
-          Caption = #1050#1086#1085#1092#1080#1075#1091#1088#1072#1094#1080#1103
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = 6250335
-          Font.Height = -33
-          Font.Name = 'Segoe UI'
-          Font.Style = []
-          ParentFont = False
-          Layout = tlCenter
-          ExplicitHeight = 45
-        end
-      end
-      object Panel40: TPanel
-        AlignWithMargins = True
-        Left = 0
-        Top = 82
-        Width = 965
-        Height = 603
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 20
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        Color = 15724009
-        Padding.Left = 1
-        Padding.Top = 1
-        Padding.Right = 1
-        ParentBackground = False
-        TabOrder = 1
-        ExplicitWidth = 977
-        object Panel41: TPanel
-          Left = 1
-          Top = 1
-          Width = 963
-          Height = 602
-          Align = alClient
-          BevelOuter = bvNone
-          Color = clWhite
-          ParentBackground = False
-          TabOrder = 0
-          ExplicitWidth = 975
-          object Panel43: TPanel
-            AlignWithMargins = True
-            Left = 5
-            Top = 5
-            Width = 690
-            Height = 597
-            Margins.Left = 5
-            Margins.Top = 5
-            Margins.Right = 5
-            Margins.Bottom = 0
-            Align = alLeft
-            BevelOuter = bvNone
-            Color = 16250610
-            Padding.Left = 20
-            Padding.Top = 20
-            Padding.Right = 20
-            Padding.Bottom = 20
-            ParentBackground = False
-            TabOrder = 0
-            object Shape6: TShape
-              Left = 38
-              Top = 203
-              Width = 2
-              Height = 110
-              Brush.Color = 9142358
-              Pen.Color = 9142358
-            end
-            object Shape7: TShape
-              Left = 38
-              Top = 53
-              Width = 2
-              Height = 30
-              Brush.Color = 9142358
-              Pen.Color = 9142358
-            end
-            object Shape8: TShape
-              Left = 38
-              Top = 82
-              Width = 30
-              Height = 2
-              Brush.Color = 9142358
-              Pen.Color = 9142358
-            end
-            object Shape9: TShape
-              Left = 38
-              Top = 235
-              Width = 30
-              Height = 2
-              Brush.Color = 9142358
-              Pen.Color = 9142358
-            end
-            object Shape10: TShape
-              Left = 38
-              Top = 312
-              Width = 30
-              Height = 2
-              Brush.Color = 9142358
-              Pen.Color = 9142358
-            end
-            object ButtonFlatProdKind: TButtonFlat
-              AlignWithMargins = True
-              Left = 71
-              Top = 210
-              Width = 177
-              Height = 50
-              Margins.Left = 0
-              Margins.Top = 2
-              Margins.Right = 0
-              Margins.Bottom = 2
-              Caption = #1042#1080#1076#1099' '#1090#1086#1074#1072#1088#1086#1074
-              ColorNormal = 16052974
-              ColorOver = 15789800
-              ColorPressed = 14276036
-              EllipseRectVertical = True
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -16
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = 6250335
-              FontOver.Height = -16
-              FontOver.Name = 'Segoe UI'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = 6250335
-              FontDown.Height = -16
-              FontDown.Name = 'Segoe UI'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 0
-              ImageIndex = 0
-              OnClick = ButtonFlatProdKindClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 0
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlatStorageProtocol: TButtonFlat
-              AlignWithMargins = True
-              Left = 71
-              Top = 268
-              Width = 177
-              Height = 85
-              Margins.Left = 0
-              Margins.Top = 2
-              Margins.Right = 0
-              Margins.Bottom = 2
-              Caption = #1055#1088#1086#1090#1086#1082#1086#1083' '#1087#1086#1087#1086#1083#1085#1077#1085#1080#1081'/'#1089#1087#1080#1089#1072#1085#1080#1081' '#1089#1082#1083#1072#1076#1072
-              ColorNormal = 16052974
-              ColorOver = 15789800
-              ColorPressed = 14276036
-              EllipseRectVertical = True
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -16
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = 6250335
-              FontOver.Height = -16
-              FontOver.Name = 'Segoe UI'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = 6250335
-              FontDown.Height = -16
-              FontDown.Name = 'Segoe UI'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 0
-              ImageIndex = 0
-              OnClick = ButtonFlatStorageProtocolClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 1
-              TabStop = True
-              TextFormat = [tfCenter, tfVerticalCenter, tfWordBreak, tfWordEllipsis, tfComposited]
-            end
-            object ButtonFlatTableDrivers: TButtonFlat
-              AlignWithMargins = True
-              Left = 71
-              Top = 57
-              Width = 177
-              Height = 50
-              Margins.Left = 0
-              Margins.Top = 2
-              Margins.Right = 0
-              Margins.Bottom = 2
-              Caption = #1042#1086#1076#1080#1090#1077#1083#1080
-              ColorNormal = 16052974
-              ColorOver = 15789800
-              ColorPressed = 14276036
-              EllipseRectVertical = True
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -16
-              Font.Name = 'Segoe UI'
-              Font.Style = []
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = 6250335
-              FontOver.Height = -16
-              FontOver.Name = 'Segoe UI'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = 6250335
-              FontDown.Height = -16
-              FontDown.Name = 'Segoe UI'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 0
-              ImageIndex = 0
-              OnClick = ButtonFlatTableDriversClick
-              RoundRectParam = 8
-              Shape = stRoundRect
-              ShowFocusRect = False
-              TabOrder = 2
-              TabStop = True
-              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlat1: TButtonFlat
-              AlignWithMargins = True
-              Left = 20
-              Top = 20
-              Width = 129
-              Height = 28
-              Cursor = crDefault
-              Margins.Left = 10
-              Margins.Top = 5
-              Margins.Right = 10
-              Margins.Bottom = 5
-              Caption = #1044#1086#1089#1090#1072#1074#1082#1072
-              ColorNormal = 16052974
-              ColorOver = 16052974
-              ColorPressed = 16052974
-              Enabled = False
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 6
-              ImageIndentRight = 6
-              ImageIndex = 7
-              Images = ImageListSmall
-              Transparent = True
-              RoundRectParam = 8
-              ShowFocusRect = False
-              TabOrder = 3
-              TabStop = True
-              TextFormat = [tfSingleLine, tfVerticalCenter]
-            end
-            object ButtonFlat12: TButtonFlat
-              AlignWithMargins = True
-              Left = 20
-              Top = 167
-              Width = 198
-              Height = 28
-              Cursor = crDefault
-              Margins.Left = 10
-              Margins.Top = 5
-              Margins.Right = 10
-              Margins.Bottom = 5
-              Caption = #1059#1087#1088#1072#1074#1083#1077#1085#1080#1077' '#1090#1086#1074#1072#1088#1072#1084#1080
-              ColorNormal = 16052974
-              ColorOver = 16052974
-              ColorPressed = 16052974
-              Enabled = False
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = 6250335
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = [fsBold]
-              FontOver.Charset = DEFAULT_CHARSET
-              FontOver.Color = clWhite
-              FontOver.Height = -13
-              FontOver.Name = 'Tahoma'
-              FontOver.Style = []
-              FontDown.Charset = DEFAULT_CHARSET
-              FontDown.Color = clWhite
-              FontDown.Height = -13
-              FontDown.Name = 'Tahoma'
-              FontDown.Style = []
-              IgnorBounds = True
-              ImageIndentLeft = 6
-              ImageIndentRight = 6
-              ImageIndex = 15
-              Images = ImageListSmall
-              Transparent = True
-              RoundRectParam = 8
-              ShowFocusRect = False
-              TabOrder = 4
-              TabStop = True
-              TextFormat = [tfSingleLine, tfVerticalCenter]
-            end
-          end
-        end
-      end
-    end
     object PanelCurClient: TPanel
       Left = 0
       Top = 0
@@ -1488,7 +1139,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 4
       Visible = False
-      ExplicitWidth = 997
       object Panel21: TPanel
         Left = 0
         Top = 0
@@ -1497,7 +1147,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object LabelSelClient: TLabel
           AlignWithMargins = True
           Left = 15
@@ -1535,7 +1184,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel23: TPanel
           Left = 1
           Top = 1
@@ -1546,7 +1194,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel24: TPanel
             Left = 0
             Top = 0
@@ -1557,7 +1204,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 975
             object ButtonFlatClientSave: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -1662,7 +1308,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 965
             object Label12: TLabel
               Left = 17
               Top = 24
@@ -1801,7 +1446,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 2
-            ExplicitWidth = 965
             object Label15: TLabel
               AlignWithMargins = True
               Left = 10
@@ -1882,7 +1526,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 5
       Visible = False
-      ExplicitWidth = 997
       object Panel30: TPanel
         Left = 0
         Top = 0
@@ -1891,7 +1534,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object LabelSelProdKind: TLabel
           AlignWithMargins = True
           Left = 15
@@ -1929,7 +1571,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel32: TPanel
           Left = 1
           Top = 1
@@ -1940,7 +1581,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel33: TPanel
             Left = 0
             Top = 0
@@ -1951,7 +1591,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 975
             object ButtonFlatProdKindSave: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -2054,7 +1693,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 965
             object Label18: TLabel
               Left = 17
               Top = 24
@@ -2132,7 +1770,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 9
       Visible = False
-      ExplicitWidth = 997
       object Panel47: TPanel
         Left = 0
         Top = 0
@@ -2141,7 +1778,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label24: TLabel
           AlignWithMargins = True
           Left = 15
@@ -2179,7 +1815,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel49: TPanel
           Left = 1
           Top = 1
@@ -2190,7 +1825,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel50: TPanel
             Left = 0
             Top = 0
@@ -2201,7 +1835,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 975
             object ButtonFlatStorageItemSave: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -2304,7 +1937,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 965
             object Label25: TLabel
               Left = 17
               Top = 24
@@ -2398,7 +2030,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 0
       Visible = False
-      ExplicitWidth = 997
       object PanelTableClientHead: TPanel
         Left = 0
         Top = 0
@@ -2407,7 +2038,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label3: TLabel
           AlignWithMargins = True
           Left = 15
@@ -2445,7 +2075,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel5: TPanel
           Left = 1
           Top = 1
@@ -2456,7 +2085,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object TableExClients: TTableEx
             AlignWithMargins = True
             Left = 5
@@ -2517,7 +2145,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlatClientsAdd: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -2688,7 +2315,6 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
           end
         end
@@ -2703,7 +2329,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 6
       Visible = False
-      ExplicitWidth = 997
       object Panel36: TPanel
         Left = 0
         Top = 0
@@ -2712,7 +2337,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label20: TLabel
           AlignWithMargins = True
           Left = 138
@@ -2792,7 +2416,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel38: TPanel
           Left = 1
           Top = 1
@@ -2803,7 +2426,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object TableExProdKind: TTableEx
             AlignWithMargins = True
             Left = 5
@@ -2864,7 +2486,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlatProdKindAdd: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -3036,7 +2657,6 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
           end
         end
@@ -3051,7 +2671,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 8
       Visible = False
-      ExplicitWidth = 997
       object Panel42: TPanel
         Left = 0
         Top = 0
@@ -3060,7 +2679,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label23: TLabel
           AlignWithMargins = True
           Left = 15
@@ -3098,7 +2716,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel45: TPanel
           Left = 1
           Top = 1
@@ -3109,7 +2726,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object TableExStorage: TTableEx
             AlignWithMargins = True
             Left = 5
@@ -3170,7 +2786,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlatStorageAdd: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -3342,7 +2957,6 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
           end
         end
@@ -3357,7 +2971,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 10
       Visible = False
-      ExplicitWidth = 997
       object Panel53: TPanel
         Left = 0
         Top = 0
@@ -3366,7 +2979,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label34: TLabel
           AlignWithMargins = True
           Left = 138
@@ -3446,7 +3058,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel55: TPanel
           Left = 1
           Top = 1
@@ -3457,7 +3068,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object TableExStorageProtocol: TTableEx
             AlignWithMargins = True
             Left = 5
@@ -3518,7 +3128,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlat16: TButtonFlat
               AlignWithMargins = True
               Left = 917
@@ -3561,7 +3170,6 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
           end
         end
@@ -3576,7 +3184,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 2
       Visible = False
-      ExplicitWidth = 997
       object Panel12: TPanel
         Left = 0
         Top = 0
@@ -3585,7 +3192,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object LabelSelectOrder: TLabel
           AlignWithMargins = True
           Left = 15
@@ -3623,7 +3229,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel14: TPanel
           Left = 1
           Top = 1
@@ -3634,7 +3239,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel15: TPanel
             Left = 0
             Top = 0
@@ -3645,7 +3249,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 975
             object ButtonFlatOrderSave: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -3750,7 +3353,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 965
             object Label5: TLabel
               Left = 17
               Top = 24
@@ -3900,9 +3502,9 @@ object FormMain: TFormMain
               Top = 83
               Width = 66
               Height = 24
-              Date = 43334.836574074080000000
+              Date = 43334.000000000000000000
               Format = 'HH:mm'
-              Time = 43334.836574074080000000
+              Time = 0.836574074077361700
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -3918,8 +3520,8 @@ object FormMain: TFormMain
               Top = 83
               Width = 111
               Height = 24
-              Date = 43334.128251226850000000
-              Time = 43334.128251226850000000
+              Date = 43334.000000000000000000
+              Time = 0.128251226851716600
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -4129,16 +3731,16 @@ object FormMain: TFormMain
                 end
                 item
                   Caption = #1042#1080#1076' '#1090#1086#1074#1072#1088#1072
-                  Width = 200
+                  Width = 64
                   MinWidth = 200
                 end
                 item
                   Caption = #1050#1086#1083'-'#1074#1086
-                  Width = 70
+                  Width = 64
                   MinWidth = 70
                 end
                 item
-                  Width = 147
+                  Width = 290
                   MinWidth = 10
                 end>
               CanNoSelect = False
@@ -4358,7 +3960,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 11
       Visible = False
-      ExplicitWidth = 997
       object Panel57: TPanel
         Left = 0
         Top = 0
@@ -4367,7 +3968,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label36: TLabel
           AlignWithMargins = True
           Left = 138
@@ -4447,7 +4047,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel59: TPanel
           Left = 1
           Top = 1
@@ -4458,7 +4057,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object TableExDrivers: TTableEx
             AlignWithMargins = True
             Left = 5
@@ -4518,7 +4116,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlatDriversAdd: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -4689,7 +4286,6 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
           end
         end
@@ -4704,7 +4300,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 1
       Visible = False
-      ExplicitWidth = 997
       object Panel8: TPanel
         Left = 0
         Top = 0
@@ -4713,7 +4308,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label4: TLabel
           AlignWithMargins = True
           Left = 15
@@ -4751,7 +4345,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel10: TPanel
           Left = 1
           Top = 1
@@ -4762,7 +4355,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel11: TPanel
             Left = 0
             Top = 0
@@ -4773,7 +4365,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 1
-            ExplicitWidth = 975
             object ButtonFlatOrderAdd: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -4945,7 +4536,6 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
-              ExplicitLeft = 929
             end
             object ButtonFlatOrderSetState3: TButtonFlat
               AlignWithMargins = True
@@ -5141,7 +4731,6 @@ object FormMain: TFormMain
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitWidth = 997
       object Panel17: TPanel
         Left = 0
         Top = 0
@@ -5150,7 +4739,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label10: TLabel
           AlignWithMargins = True
           Left = 15
@@ -5188,7 +4776,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel19: TPanel
           Left = 1
           Top = 1
@@ -5202,7 +4789,6 @@ object FormMain: TFormMain
           Padding.Right = 10
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel20: TPanel
             Left = 10
             Top = 10
@@ -5213,7 +4799,6 @@ object FormMain: TFormMain
             Color = clWhite
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 955
             object ButtonFlatFeedNewOrder: TButtonFlat
               AlignWithMargins = True
               Left = 5
@@ -5316,7 +4901,6 @@ object FormMain: TFormMain
               BevelOuter = bvNone
               Color = clGray
               TabOrder = 2
-              ExplicitLeft = 600
               object EditSearchFeed: TEdit
                 Left = 0
                 Top = 0
@@ -5400,7 +4984,6 @@ object FormMain: TFormMain
             Padding.Bottom = 1
             ParentBackground = False
             TabOrder = 1
-            ExplicitLeft = 678
             object TableExHotOrders: TTableEx
               Left = 1
               Top = 43
@@ -5561,7 +5144,6 @@ object FormMain: TFormMain
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 2
-            ExplicitWidth = 945
             object Shape4: TShape
               AlignWithMargins = True
               Left = 5
@@ -5637,7 +5219,6 @@ object FormMain: TFormMain
       BevelOuter = bvNone
       TabOrder = 13
       Visible = False
-      ExplicitWidth = 997
       object Panel16: TPanel
         Left = 0
         Top = 0
@@ -5646,7 +5227,6 @@ object FormMain: TFormMain
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 997
         object Label29: TLabel
           AlignWithMargins = True
           Left = 15
@@ -5684,7 +5264,6 @@ object FormMain: TFormMain
         Padding.Right = 1
         ParentBackground = False
         TabOrder = 1
-        ExplicitWidth = 977
         object Panel66: TPanel
           Left = 1
           Top = 1
@@ -5695,7 +5274,6 @@ object FormMain: TFormMain
           Color = clWhite
           ParentBackground = False
           TabOrder = 0
-          ExplicitWidth = 975
           object Panel67: TPanel
             AlignWithMargins = True
             Left = 5
@@ -5711,7 +5289,6 @@ object FormMain: TFormMain
             Color = 16250610
             ParentBackground = False
             TabOrder = 0
-            ExplicitWidth = 965
             object TableExCalendar: TTableEx
               Left = 0
               Top = 0
@@ -5737,181 +5314,181 @@ object FormMain: TFormMain
                 end
                 item
                   Caption = '1'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '2'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '3'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '4'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '5'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '6'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '7'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '8'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '9'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '10'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '11'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '12'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '13'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '14'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '15'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '16'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '17'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '18'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '19'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '20'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '21'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '22'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '23'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '24'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '25'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '26'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '27'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '28'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '29'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
                 item
                   Caption = '30'
-                  Width = 24
+                  Width = 64
                   Format = [tfCenter, tfLeft, tfSingleLine, tfVerticalCenter]
                   MinWidth = 24
                 end
@@ -5968,7 +5545,6 @@ object FormMain: TFormMain
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitWidth = 965
             object SpinEditCalendarYear: TlkSpinEdit
               Left = 0
               Top = 0
@@ -6028,6 +5604,342 @@ object FormMain: TFormMain
         end
       end
     end
+    object PanelDBConfig: TPanel
+      Left = 0
+      Top = 0
+      Width = 985
+      Height = 685
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 7
+      Visible = False
+      object Panel35: TPanel
+        Left = 0
+        Top = 0
+        Width = 985
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label22: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 3
+          Width = 220
+          Height = 76
+          Margins.Left = 15
+          Align = alLeft
+          Caption = #1050#1086#1085#1092#1080#1075#1091#1088#1072#1094#1080#1103
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 6250335
+          Font.Height = -33
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          Layout = tlCenter
+          ExplicitHeight = 45
+        end
+      end
+      object Panel40: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 82
+        Width = 965
+        Height = 603
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 20
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15724009
+        Padding.Left = 1
+        Padding.Top = 1
+        Padding.Right = 1
+        ParentBackground = False
+        TabOrder = 1
+        object Panel41: TPanel
+          Left = 1
+          Top = 1
+          Width = 963
+          Height = 602
+          Align = alClient
+          BevelOuter = bvNone
+          Color = clWhite
+          ParentBackground = False
+          TabOrder = 0
+          object Panel43: TPanel
+            AlignWithMargins = True
+            Left = 5
+            Top = 5
+            Width = 690
+            Height = 597
+            Margins.Left = 5
+            Margins.Top = 5
+            Margins.Right = 5
+            Margins.Bottom = 0
+            Align = alLeft
+            BevelOuter = bvNone
+            Color = 16250610
+            Padding.Left = 20
+            Padding.Top = 20
+            Padding.Right = 20
+            Padding.Bottom = 20
+            ParentBackground = False
+            TabOrder = 0
+            object Shape6: TShape
+              Left = 38
+              Top = 203
+              Width = 2
+              Height = 104
+              Brush.Color = 9142358
+              Pen.Color = 9142358
+            end
+            object Shape7: TShape
+              Left = 38
+              Top = 53
+              Width = 2
+              Height = 30
+              Brush.Color = 9142358
+              Pen.Color = 9142358
+            end
+            object Shape8: TShape
+              Left = 38
+              Top = 82
+              Width = 30
+              Height = 2
+              Brush.Color = 9142358
+              Pen.Color = 9142358
+            end
+            object Shape9: TShape
+              Left = 38
+              Top = 235
+              Width = 30
+              Height = 2
+              Brush.Color = 9142358
+              Pen.Color = 9142358
+            end
+            object Shape10: TShape
+              Left = 38
+              Top = 305
+              Width = 30
+              Height = 2
+              Brush.Color = 9142358
+              Pen.Color = 9142358
+            end
+            object ButtonFlatProdKind: TButtonFlat
+              AlignWithMargins = True
+              Left = 71
+              Top = 210
+              Width = 177
+              Height = 50
+              Margins.Left = 0
+              Margins.Top = 2
+              Margins.Right = 0
+              Margins.Bottom = 2
+              Caption = #1042#1080#1076#1099' '#1090#1086#1074#1072#1088#1086#1074
+              ColorNormal = 16052974
+              ColorOver = 15789800
+              ColorPressed = 14276036
+              EllipseRectVertical = True
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -16
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -16
+              FontOver.Name = 'Segoe UI'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -16
+              FontDown.Name = 'Segoe UI'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 0
+              ImageIndex = 0
+              OnClick = ButtonFlatProdKindClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 0
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlatStorageProtocol: TButtonFlat
+              AlignWithMargins = True
+              Left = 71
+              Top = 268
+              Width = 177
+              Height = 69
+              Margins.Left = 0
+              Margins.Top = 2
+              Margins.Right = 0
+              Margins.Bottom = 2
+              Caption = #1055#1088#1086#1090#1086#1082#1086#1083' '#1087#1086#1087#1086#1083#1085#1077#1085#1080#1081'/'#1089#1087#1080#1089#1072#1085#1080#1081' '#1089#1082#1083#1072#1076#1072
+              ColorNormal = 16052974
+              ColorOver = 15789800
+              ColorPressed = 14276036
+              EllipseRectVertical = True
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -16
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -16
+              FontOver.Name = 'Segoe UI'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -16
+              FontDown.Name = 'Segoe UI'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 0
+              ImageIndex = 0
+              OnClick = ButtonFlatStorageProtocolClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 1
+              TabStop = True
+              TextFormat = [tfCenter, tfVerticalCenter, tfWordBreak, tfWordEllipsis]
+            end
+            object ButtonFlatTableDrivers: TButtonFlat
+              AlignWithMargins = True
+              Left = 71
+              Top = 57
+              Width = 177
+              Height = 50
+              Margins.Left = 0
+              Margins.Top = 2
+              Margins.Right = 0
+              Margins.Bottom = 2
+              Caption = #1042#1086#1076#1080#1090#1077#1083#1080
+              ColorNormal = 16052974
+              ColorOver = 15789800
+              ColorPressed = 14276036
+              EllipseRectVertical = True
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -16
+              Font.Name = 'Segoe UI'
+              Font.Style = []
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = 6250335
+              FontOver.Height = -16
+              FontOver.Name = 'Segoe UI'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = 6250335
+              FontDown.Height = -16
+              FontDown.Name = 'Segoe UI'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 0
+              ImageIndex = 0
+              OnClick = ButtonFlatTableDriversClick
+              RoundRectParam = 8
+              Shape = stRoundRect
+              ShowFocusRect = False
+              TabOrder = 2
+              TabStop = True
+              TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlat1: TButtonFlat
+              AlignWithMargins = True
+              Left = 20
+              Top = 20
+              Width = 129
+              Height = 28
+              Cursor = crDefault
+              Margins.Left = 10
+              Margins.Top = 5
+              Margins.Right = 10
+              Margins.Bottom = 5
+              Caption = #1044#1086#1089#1090#1072#1074#1082#1072
+              ColorNormal = 16052974
+              ColorOver = 16052974
+              ColorPressed = 16052974
+              Enabled = False
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 6
+              ImageIndentRight = 6
+              ImageIndex = 7
+              Images = ImageListSmall
+              Transparent = True
+              RoundRectParam = 8
+              ShowFocusRect = False
+              TabOrder = 3
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+            object ButtonFlat12: TButtonFlat
+              AlignWithMargins = True
+              Left = 20
+              Top = 167
+              Width = 198
+              Height = 28
+              Cursor = crDefault
+              Margins.Left = 10
+              Margins.Top = 5
+              Margins.Right = 10
+              Margins.Bottom = 5
+              Caption = #1059#1087#1088#1072#1074#1083#1077#1085#1080#1077' '#1090#1086#1074#1072#1088#1072#1084#1080
+              ColorNormal = 16052974
+              ColorOver = 16052974
+              ColorPressed = 16052974
+              Enabled = False
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 6250335
+              Font.Height = -13
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              FontOver.Charset = DEFAULT_CHARSET
+              FontOver.Color = clWhite
+              FontOver.Height = -13
+              FontOver.Name = 'Tahoma'
+              FontOver.Style = []
+              FontDown.Charset = DEFAULT_CHARSET
+              FontDown.Color = clWhite
+              FontDown.Height = -13
+              FontDown.Name = 'Tahoma'
+              FontDown.Style = []
+              IgnorBounds = True
+              ImageIndentLeft = 6
+              ImageIndentRight = 6
+              ImageIndex = 15
+              Images = ImageListSmall
+              Transparent = True
+              RoundRectParam = 8
+              ShowFocusRect = False
+              TabOrder = 4
+              TabStop = True
+              TextFormat = [tfSingleLine, tfVerticalCenter]
+            end
+          end
+        end
+      end
+    end
   end
   object ImageList24: TImageList
     ColorDepth = cd32Bit
@@ -6036,7 +5948,7 @@ object FormMain: TFormMain
     Left = 1008
     Top = 8
     Bitmap = {
-      494C010103000500B00020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000500040020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -6583,7 +6495,7 @@ object FormMain: TFormMain
     Left = 1129
     Top = 9
     Bitmap = {
-      494C010111001500B00018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010111001500040018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006000000078000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
