@@ -18,7 +18,8 @@ uses
   Delivery.Table.Orders.Products in 'Delivery.Table.Orders.Products.pas',
   Delivery.Table.Drivers in 'Delivery.Table.Drivers.pas',
   Delivery.Patterns in 'Delivery.Patterns.pas' {Form1},
-  Delivery.Table.Drivers.Calendar in 'Delivery.Table.Drivers.Calendar.pas';
+  Delivery.Table.Drivers.Calendar in 'Delivery.Table.Drivers.Calendar.pas',
+  VCLFlickerReduce in '..\..\#Fork\VCLFlickerReduce\VCLFlickerReduce.pas';
 
 {$R *.res}
 
